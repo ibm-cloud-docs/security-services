@@ -1,0 +1,53 @@
+toc:
+  properties:
+    subcollection: solution-name
+    industry: security
+    use-case: deployment of security services
+    compliance: security
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    deployable: false # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
+    href: /docs/subcollection-value
+    path: repo-name
+    description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution.
+    label: Deployable Architecture for Core Security Services
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - overview.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture.md
+  - navgroup:
+      id: plan
+      topics:
+      - topic-4.md
+      - topicgroup:
+          label: topic-group-label
+          topics:
+          - topic-5.md
+          - topicgroup:
+              label: nested-topic-group-label
+              topics:
+              - topic-6.md
+  - navgroup:
+      id: deploy
+      topics:
+      - deployment-guide.md
+  - navgroup:
+      id: help
+      topics:
+      - support.md
+      - topicgroup:
+          label: FAQs
+          topics:
+          - topic-9.md
+          - topic-10.md
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - topic-11.md
+          - topic-12.md

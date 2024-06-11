@@ -54,14 +54,14 @@ Ensure that you are familiar with the "Important Deployment Considerations" loca
 * Locate the Core Security Services [tile](/catalog/7df1e4ca-d54c-4fd0-82ce-3d13247308cd/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119#about) for the Deployable Architecture in the IBM Cloud Catalog. It will load the Core Security Services Panel. On this panel, you can review the Product Version, Variation, Architecture overview, Permissions, Security & Compliance, Help and Pricing.
 * Afrer, Click the "Add to project" button.
 
-    ![image](./images/ccs_catalog_details.png)
+    ![image](images/ccs_catalog_details.png)
 
 * Select **Create new** and enter the following details:
    - Name and Description (e.g., "Core Security Services")
    - Region and Resource Group for the project. e.g. for evaluation purposes, you may select the region the closest to you, and the Default resource group. For more insights on the recommended production topology, refer to the Enterprise account architecture Central administration account [white paper](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account).
    - Configuration Name (name of the automation in the project, e.g., "ccs_cfg", "ccs_dev" or "ccs_prod", ideally matching the deployment target, but this can be any name)
 
-        ![project](./images/ccs_add_to_project.png)
+        ![project](images/ccs_add_to_project.png)
 
 * Click the **Add** button (or **Create** if this is the first project in the account) at the bottom right of the modal popup to complete.
 
@@ -70,7 +70,7 @@ Ensure that you are familiar with the "Important Deployment Considerations" loca
 
 After completing `Step 2 - Deploy the Stack in a New Project from Catalog`, you are directed to a page allowing you to enter the configuration for you deployment:
 * Under Security -> Authentication, enter the API Key from the prereqs in the `api_key` field.
-  ![inputs](./images/ccs_add_api_key.png)
+  ![inputs](images/ccs_add_api_key.png)
 * Under Required, input a prefix. This prefix will be appended to the name of most resources created by automation, ensuring uniqueness and avoiding clashes when provisioning names in the same account. **Note:** Prefix does not contain undersocre.
 * 
 * Select the region and provide a resource group name where you would like the resources to be created. 
@@ -85,12 +85,12 @@ Once ready, click the "Save" button at the top of the screen. After validating t
 
 Navigate to the project deployment view by clicking the project name in the breadcrumb menu.
 
-![menu](./images/ccs_project_deployment_view.png)
+![menu](images/ccs_project_deployment_view.png)
 
 
 You should be directed to a screen looking like:
 
-![validate](./images/ccs_project_configuration_stack.png)
+![validate](images/ccs_project_configuration_stack.png)
 
 Note: in some rare occurences, the first member of the stack may not be marked as "Ready to validate". Refreshing the page in your browser window should solve this problem.
 
@@ -99,21 +99,21 @@ Note: in some rare occurences, the first member of the stack may not be marked a
 
 1. Click on validate
 
-    ![validate button](./images/ccs_validate.png)
+    ![validate button](images/ccs_validate.png)
 
 2. Wait for validation
 
-    ![validation](./images/ccs_waiting_for_validation.png)
+    ![validation](images/ccs_waiting_for_validation.png)
 
 3. Approve and click the deploy button
 
-    ![deploy](./images/ccs_approve_and_deploy.png)
+    ![deploy](images/ccs_approve_and_deploy.png)
 
 4. Wait for deployment
 
 5. Repeat step 1 for the next configuration in the architecture. Note that as you progress in deploying the initial kms configuration, you will be given the option to validate and deploy multiple configuration in parallel. 
 
-    ![deployed](./images/ccs_stack_deployed.png)
+    ![deployed](images/ccs_stack_deployed.png)
 
 
 ### 5. Post deployment steps
@@ -129,7 +129,7 @@ To view deployment of the core security services related resources, follow these
 
 2. **Select the Resource Group and Region**: Choose the resource group and region where the infrastructure was deployed. The resource group name is based on the prefix and resource_group_name inputs of the deployable architecture.
 
-    ![deployed_resources](./images/ccs_deployed_resources.png)
+    ![deployed_resources](images/ccs_deployed_resources.png)
 
 
 ### 6. Important Deployment Considerations
@@ -188,7 +188,7 @@ There are numerous customization possibilities available out of the box. This se
 
 Each configuration in the deployed stack surfaces a large number of input parameters. You can directly edit each parameter to tailor your deployment by selecting the **Edit** option in the menu for the corresponding configuration on the right-hand side.
 
-![edit config](./images/css_edit_configurations.png)
+![edit config](images/css_edit_configurations.png)
 
 This approach enables you to:
 - Use existing instances of Key Protect, Secrets Manager, etcc
@@ -208,7 +208,7 @@ This applies to the following configurations:
 - Security and Control Center
 - Secrets Manager
 
-![edit config](./images/ccs_remove_component.png)
+![edit config](images/ccs_remove_component.png)
 
 ### Managing Stack-Level Inputs and Outputs
 {: deployment-guide-customizations-managing-inputs-outputs}
@@ -216,10 +216,10 @@ This applies to the following configurations:
 You can add or remove inputs and outputs surfaced at the stack level by following these steps:
 1. Select the stack configuration
 
-    ![stack def](./images/ccs_define_stack.png)
+    ![stack def](images/ccs_define_stack.png)
 1. You are presented with a screen allowing you to promote any of the configuration inputs or outputs at the stack level
 
-    ![stack def](./images/ccs_edit_stack_definition_config.png)
+    ![stack def](images/ccs_edit_stack_definition_config.png)
 
 ### Sharing Modified Stacks through a Private IBM Cloud Catalog
 {: deployment-guide-customizations-sharing-stacks}

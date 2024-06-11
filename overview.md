@@ -6,7 +6,7 @@ lastupdated: "2024-06-11"
 
 keywords: security services, deployable architecture, IaC
 
-subcollection: key-protect
+subcollection: security-services
 
 ---
 

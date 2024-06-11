@@ -1,6 +1,6 @@
 toc:
   properties:
-    subcollection: solution-name
+    subcollection: security-services
     industry: security
     use-case: deployment of security services
     compliance: security
@@ -8,8 +8,8 @@ toc:
     category: solution_docs
     content-type: deployment
     deployable: false # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
-    href: /docs/subcollection-value
-    path: repo-name
+    href: /docs/security-services
+    path: https://github.ibm.com/cloud-docs-solutions/security-services
     description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution.
     label: Deployable Architecture for Core Security Services
   entries:

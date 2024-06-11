@@ -15,7 +15,7 @@ subcollection: security-services
 # Core Security Services on IBM Cloud
 {: deployment-guide}
 
-The Core Security Services Deployable Architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. IBM Cloud's core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. Primary goal is to provide framework for secure and compliant IBM Cloud Workloads.
+The Core Security Services deployable architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. IBM Cloud's core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. The primary goal of this deployable architecture is to provide a framework for secure and compliant IBM Cloud Workloads.
 
 ## Objectives and benefits
 {: deployment-guide-objectives}

@@ -10,7 +10,7 @@ toc:
     deployable: false # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
     href: /docs/security-services
     path: security-services
-    description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution.
+    description: Deployable Architecture for Core Security Services, including Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, Cloud Object Storage, and Observability.
     label: Deployable Architecture for Core Security Services
   entries:
   - navgroup:

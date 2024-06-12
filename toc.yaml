@@ -11,7 +11,7 @@ toc:
     href: /docs/security-services
     path: security-services
     description: Deployable Architecture for Core Security Services, including Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, Cloud Object Storage, and Observability.
-    label: Deployable Architecture for Core Security Services
+    label: Core security services
   entries:
   - navgroup:
       id: overview
@@ -38,16 +38,17 @@ toc:
       topics:
       - deployment-guide.md
   - navgroup:
-      id: help
+      id: reference
       topics:
-      - support.md
-      - topicgroup:
-          label: FAQs
-          topics:
-          - topic-9.md
-          - topic-10.md
+      - topic: shared-responsibilities.md
+        navtitle: Responsibilities
+  - navgroup:
+      id: help
+      topics: 
+      - topic: support.md
+        navtitle: Getting help and support
+      - faqs.md
       - topicgroup:
           label: Troubleshooting
           topics:
-          - topic-11.md
-          - topic-12.md
+          - ts-deploy.md

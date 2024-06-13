@@ -22,6 +22,10 @@ toc:
       topics:
       - reference-architecture-css.md
   - navgroup:
+      id: plan
+      topics:
+      - prereqs.md
+  - navgroup:
       id: deploy
       topics:
       - deployment-guide.md

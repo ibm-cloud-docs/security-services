@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-13"
 
 keywords: security services, deployable architecture, IaC
 
@@ -13,7 +13,7 @@ subcollection: security-services
 {{site.data.keyword.attribute-definition-list}}
 
 # Overview of Core Security Services Deployable Architecture (Stack)
-{: overview}
+{: #overview}
 
 The Core Security Services Deployable Architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. IBM Cloud's core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. Primary goal is to provide framework for secure and compliant IBM Cloud Workloads.
 
@@ -31,7 +31,7 @@ By using this architecture, you can:
 This deployable architecture supports these features:
 
 ## Features and capabilities
-{: overview-features}
+{: #overview-features}
 
 * Creates and configures an IBM Key Protect instance and creates root keys for IBM Cloud Object Storage, Event Notifications, and Secrets Manager.
 * Creates and configures an IBM Secrets Manager instance.

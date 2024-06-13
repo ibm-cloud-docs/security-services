@@ -24,6 +24,7 @@ toc:
   - navgroup:
       id: plan
       topics:
+      - limitations.md
       - prereqs.md
   - navgroup:
       id: deploy

@@ -12,10 +12,6 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# My deployment failed, how do I proceed?
-{: #ts-deploy-deploy-failed}
-{: troubleshoot}
-
 # Deployment in the UI stops with an errror.
 {: #ts-deploy}
 {: troubleshoot}

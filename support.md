@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-12"
+lastupdated: "2024-06-13"
 
 keywords: security services, deployable architecture, IaC, help, support
 
@@ -13,14 +13,14 @@ subcollection: security-services
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting help and support for the Core security services deployable architectures
-{: #help-and-support}
+{: #help-support}
 
 If you experience an issue or have questions when you deploy a Core security services deployable architecture, you can use the following resources before you open a support case.
 {: shortdesc}
 
 * Review the [FAQs](/docs/security-services?topic=security-services-faqs) in the deployment guide.
-* Review the [troubleshooting documentation](docs/security-services?topic=security-services-troubleshoot) to troubleshoot and resolve common issues.
-* ![{{site.data.keyword.cloud_notm}} icon](images/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+* Review the [troubleshooting documentation](/docs/security-services?topic=security-services-troubleshoot) to troubleshoot and resolve common issues.
+* ![{{site.data.keyword.cloud_notm}} icon](../images/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services/issues){: external} to see whether other users experienced the same problem.
 
 

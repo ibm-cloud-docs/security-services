@@ -20,19 +20,7 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - reference-architecture.md
-  - navgroup:
-      id: plan
-      topics:
-      - topic-4.md
-      - topicgroup:
-          label: topic-group-label
-          topics:
-          - topic-5.md
-          - topicgroup:
-              label: nested-topic-group-label
-              topics:
-              - topic-6.md
+      - reference-architecture-css.md
   - navgroup:
       id: deploy
       topics:
@@ -40,7 +28,7 @@ toc:
   - navgroup:
       id: reference
       topics:
-      - topic: shared-responsibilities.md
+      - topic: responsibilities.md
         navtitle: Responsibilities
   - navgroup:
       id: help

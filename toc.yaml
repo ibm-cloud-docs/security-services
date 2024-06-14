@@ -20,7 +20,7 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - reference-architecture-css.md
+      - include: ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
   - navgroup:
       id: plan
       topics:

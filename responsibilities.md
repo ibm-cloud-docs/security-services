@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-12"
+lastupdated: "2024-06-14"
 
 keywords: 
 
@@ -40,7 +40,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | your Responsibilities |
 |----------|-----------------------|--------|
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 |Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
@@ -60,7 +60,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
 | Keep deployed services and resources up to date | N/A | Apply fixes and updates to the compute resources that are created from the deployable architecture. The following resources are not updated through the deployable architecture unless otherwise indicated.   \n * [Red Hat OpenShift clusters](/docs/openshift?topic=openshift-update)  \n * [Kubernetes lusters, worker nodes, and cluster components](/docs/containers?topic=containers-update) |
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
@@ -79,7 +79,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 
 Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 |Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
@@ -96,7 +96,7 @@ Identity and access management includes tasks such as authentication, authorizat
 
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 |Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
@@ -113,7 +113,7 @@ Security and regulation compliance includes tasks such as security controls impl
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 |Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |

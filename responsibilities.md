@@ -40,14 +40,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|----------|-----------------------|--------|
-|Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-{: row-headers}
-{: caption="Table 1. Responsibilities for incident and operations" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+The Core security services deployable architecture does not identify specific responsibilities in this area. For information about the general change management responsibilities when you use IBM deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
 
 
 ## Change management
@@ -60,15 +53,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|----------|-----------------------|--------|
-| Keep deployed services and resources up to date | N/A | Apply fixes and updates to the compute resources that are created from the deployable architecture. The following resources are not updated through the deployable architecture unless otherwise indicated.   \n * [Red Hat OpenShift clusters](/docs/openshift?topic=openshift-update)  \n * [Kubernetes lusters, worker nodes, and cluster components](/docs/containers?topic=containers-update) |
-|Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-{: row-headers}
-{: caption="Table 2. Responsibilities for change management" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+The Core security services deployable architecture does not identify specific responsibilities in this area. For information about the general change management responsibilities when you use IBM deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
 
 
 ## Identity and access management
@@ -80,13 +65,15 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|----------|-----------------------|--------|
-|Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|------|-------------------------------------------------|-----------------------|
+| Secure with least privilege | Document the minimal IAM access requirements to run the deployable architecture. |  Ensure the documented IAM access requirements are met. |
+| Manage secrets | | * Generate the necessary secrets (IAM API keys) and configure trusted profiles that are required for the deployable architecture. \n * Manage generated secrets by following secure best practices. |
 {: row-headers}
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+
+For information about the general Identity and access managementresponsibilities when you use IBM deployable architectures, see [Identity and access management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#iam-responsibilities-da).
+
 
 ## Security and regulation compliance
 {: #security-compliance}
@@ -97,13 +84,14 @@ Identity and access management includes tasks such as authentication, authorizat
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|----------|-----------------------|--------|
-|Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|------|-------------------------------------------------|-----------------------|
+| Meet security and compliance objectives | Provide a secure deployable architecture that complies with declared standards. For more information about data security, see [How do I know that my data is safe?](/docs/overview?topic=overview-security).
+| Verify configuration changes | | Understand the effects on the security and compliance posture of any user-initiated changes to the default configuration. Run {{site.data.keyword.compliance_long}} checks if needed to ensure that the deployable architecture remains in compliance. |
 {: row-headers}
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+
+For information about the general Security and regulation compliance responsibilities when you use IBM deployable architectures, see [Security and regulation compliance](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#security-compliance-da).
 
 ## Disaster recovery
 {: #disaster-recovery}
@@ -113,11 +101,4 @@ Security and regulation compliance includes tasks such as security controls impl
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
-|----------|-----------------------|--------|
-|Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-{: row-headers}
-{: caption="Table 5. Responsibilities for disaster recovery" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+The Core security services deployable architecture does not identify specific responsibilities in this area. For information about the general BCDR responsibilities when you use IBM deployable architectures, see [Disaster recovery](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#disaster-recovery-da).

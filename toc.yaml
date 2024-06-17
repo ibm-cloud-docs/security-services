@@ -7,10 +7,10 @@ toc:
     audience: solution
     category: solution_docs
     content-type: deployment
-    deployable: false # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
+    deployable: true
     href: /docs/security-services
     path: security-services
-    description: Deployable Architecture for Core Security Services, including Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, Cloud Object Storage, and Observability.
+    description: deployable architecture for Core security services, including Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, IBM Cloud Object Storage, and Observability.
     label: Core security services
   entries:
   - navgroup:
@@ -24,7 +24,6 @@ toc:
   - navgroup:
       id: plan
       topics:
-      - limitations.md
       - prereqs.md
   - navgroup:
       id: deploy
@@ -41,6 +40,8 @@ toc:
       - topic: support.md
         navtitle: Getting help and support
       - faqs.md
+      - topic: known-issues.md
+        navtitle: Known issues
       - topicgroup:
           label: Troubleshooting
           topics:

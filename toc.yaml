@@ -37,7 +37,7 @@ toc:
         navtitle: Responsibilities
   - navgroup:
       id: help
-      topics: 
+      topics:
       - topic: support.md
         navtitle: Getting help and support
       - faqs.md

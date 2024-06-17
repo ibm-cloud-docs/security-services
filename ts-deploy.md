@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deployment in the UI stops with an error.
+# Deployment in the UI stops with an error
 {: #ts-deploy}
 {: troubleshoot}
 

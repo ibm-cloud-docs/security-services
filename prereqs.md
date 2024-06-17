@@ -47,10 +47,14 @@ In {{site.data.keyword.cloud_notm}}, when you delete a resource, it doesn't imme
 
 Before you can create a new Trial instance, delete the {{site.data.keyword.secrets-manager_short}} service from the reclamation state by running the following {{site.data.keyword.cloud_notm}} CLI commands:
 
+The first command lists all the resources in reclamation state.
+
 ```sh
-ibmcloud resource reclamations # Lists all the resources in reclamation state. Find the reclamation ID of the Secrets Manager service
+ibmcloud resource reclamations
 ```
 {: pre}
+
+ Find the reclamation ID of the Secrets Manager service. Use that ID in the following command.
 
 ```sh
 ibmcloud resource reclamation-delete <reclamation-id>

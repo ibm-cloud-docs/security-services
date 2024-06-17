@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-17"
 
 keywords: 
 
@@ -40,7 +40,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-| Task | {{site.data.keyword.IBM_notm}} responsibilities | your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 |Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |

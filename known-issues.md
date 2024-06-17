@@ -30,5 +30,6 @@ When you try to undeploy the key management member of the deployable architectur
   "transaction_id": "bss-bc223e693444d810"
 }
 ```
+{: screen}
 
 To finish undeploying, wait for about 15 minutes and then retry.

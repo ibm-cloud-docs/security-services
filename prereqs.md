@@ -49,5 +49,10 @@ Before you can create a new Trial instance, delete the {{site.data.keyword.secre
 
 ```sh
 ibmcloud resource reclamations # Lists all the resources in reclamation state. Find the reclamation ID of the Secrets Manager service
+```
+{: pre}
+
+```sh
 ibmcloud resource reclamation-delete <reclamation-id>
 ```
+{: pre}

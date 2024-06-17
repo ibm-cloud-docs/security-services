@@ -46,3 +46,4 @@ toc:
           label: Troubleshooting
           topics:
           - ts-deploy.md
+          - ts-keyring.md

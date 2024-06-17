@@ -12,37 +12,37 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Overview of Core Security Services Deployable Architecture (Stack)
+# Overview of the Core Security Services deployable architecture
 {: #overview}
 
-The Core Security Services Deployable Architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. IBM Cloud's core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. Primary goal is to provide framework for secure and compliant IBM Cloud Workloads.
+The Core Security Services deployable architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. {{site.data.keyword.cloud_notm}}'s core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. The primary goal is to provide a framework for secure and compliant {{site.data.keyword.cloud_notm}} workloads.
 
-This deployable architecture is designed to showcase a fully automated deployment of IBM Cloud Core Security Services and its dependencies through IBM Cloud Project, providing a flexible and customizable foundation for your own application deployments on IBM Cloud.
+This deployable architecture is designed to showcase a fully automated deployment of {{site.data.keyword.cloud_notm}} Core Security Services and its dependencies through {{site.data.keyword.cloud_notm}} Project, providing a flexible and customizable foundation for your own application deployments on {{site.data.keyword.cloud_notm}}.
 
 By leveraging this architecture, you can accelerate your deployment and tailor it to meet your unique business needs and enterprise goals.
 
 By using this architecture, you can:
 
-* **Establish Trust:** The architecture ensures trust by configuring the IBM Cloud account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
-* **Ensure Observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
-* **Implement Security:** The architecture ensures security by deploying IBM Key Protect and IBM Secrets Manager.
-* **Achieve Regulatory Compliance:** The architecture ensures regulatory compliance by implementing centralize Key Management, centralize secrets management, and along with IBM Security Compliance Center and Workload Protection (SCC) for secure application lifecycle management.
-
-This deployable architecture supports these features:
+* **Establish trust:** The architecture ensures trust by configuring the {{site.data.keyword.cloud_notm}} account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
+* **Ensure observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
+* **Implement security:** The architecture ensures security by deploying {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}}.
+* **Achieve regulatory compliance:** The architecture ensures regulatory compliance by implementing centralized key management, centralized secrets management, and along with {{site.data.keyword.sysdigsecure_full_notm}}, secure application lifecycle management.
 
 ## Features and capabilities
 {: #overview-features}
 
-* Creates and configures an IBM Key Protect instance and creates root keys for IBM Cloud Object Storage, Event Notifications, and Secrets Manager.
-* Creates and configures an IBM Secrets Manager instance.
+This deployable architecture supports these features.
+
+* Creates and configures a {{site.data.keyword.keymanagementserviceshort}} instance and creates root keys for {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.en_short}}, and {{site.data.keyword.secrets-manager_short}}.
+* Creates and configures an {{site.data.keyword.secrets-manager_short}} instance.
 * Creates and configures an IBM Security Compliance Center instance.
-* Creates and configures an Security and Compliance Center with Workload Protection instance.
-* Creates and configures an IBM Cloud Object Storage instance and multiple Object Storage buckets that is encrypted by Key Protect.
-* Creates and configures service-to-service authorizations for the following services: KMS, Event Notifications, Object Storage, Secrets Manager, and Security and Compliance Center.
-* Creates and configures IBM Observability components Activity Tracker Event Routing, IBM Cloub Monitoring, and IBM Log Analysis.
-* Ensures compliance to CIS IBM Cloud Foundations [Benchmark profile](/docs/security-compliance?topic=security-compliance-cis-benchmark-profile) Specific controls:
-  * Ensure Cloud Object Storage encryption is enabled with BYOK
-  * Ensure Activity Tracker data is encrypted at rest
-  * Ensure Activity Tracker trails are integrated with LogDNA Logs
-  * Ensure IBM Key Protect has automated rotation for customer managed keys enabled
-  * Ensure the IBM Key Protect service has high availability
+* Creates and configures an {{site.data.keyword.sysdigsecure_full_notm}} instance.
+* Creates and configures an {{site.data.keyword.cos_full_notm}} instance and multiple {{site.data.keyword.cos_short}} bucket that is encrypted by {{site.data.keyword.keymanagementserviceshort}}.
+* Creates and configures service-to-service authorizations for the following services: KMS, {{site.data.keyword.en_short}}, {{site.data.keyword.cos_short}}, {{site.data.keyword.secrets-manager_short}}, and Security and Compliance Center.
+* Creates and configures IBM Observability components {{site.data.keyword.atracker_short}}, {{site.data.keyword.monitoringlong_notm}}, and {{site.data.keyword.loganalysislong_notm}}.
+* Ensures compliance with the specific controls for the [CIS IBM Cloud Foundations Benchmark profile](/docs/security-compliance?topic=security-compliance-cis-benchmark-profile):
+    * Ensures {{site.data.keyword.cos_short}} encryption is enabled with BYOK.
+    * Ensures {{site.data.keyword.cloudaccesstrailshort}} data is encrypted at rest.
+    * Ensures {{site.data.keyword.cloudaccesstrailshort}} trails are integrated with LogDNA Logs.
+    * Ensures {{site.data.keyword.keymanagementserviceshort}} has automated rotation for customer-managed keys.
+    * Ensures the {{site.data.keyword.keymanagementserviceshort}} service has high availability.

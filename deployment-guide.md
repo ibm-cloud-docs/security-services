@@ -26,10 +26,10 @@ By leveraging this architecture, you can accelerate your deployment and tailor i
 
 By using this architecture, you can:
 
-* **Establish Trust:** The architecture ensures trust by configuring the {{site.data.keyword.cloud_notm}} account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
-* **Ensure Observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
-* **Implement Security:** The architecture ensures security by deploying IBM {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}}.
-* **Achieve Regulatory Compliance:** The architecture ensures regulatory compliance by implementing centralized key management, centralized secrets management, and along with IBM Security Compliance Center and Workload Protection (SCC), secure application lifecycle management.
+- **Establish trust:** The architecture ensures trust by configuring the {{site.data.keyword.cloud_notm}} account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
+- **Ensure observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
+- **Implement security:** The architecture ensures security by deploying IBM {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}}.
+- **Achieve regulatory compliance:** The architecture ensures regulatory compliance by implementing centralized key management, centralized secrets management, and along with {{site.data.keyword.sysdigsecure_full_notm}}, secure application lifecycle management.
 
 
 ## Deployment details
@@ -42,29 +42,31 @@ Before deploying the stack, make sure you check out the [Prerequisites](/docs/se
 ### 1. Deploy the stack in a new project from catalog
 {: #deployment-guide-details-deploy}
 
-* Locate the Core Security Services [tile](/catalog/7df1e4ca-d54c-4fd0-82ce-3d13247308cd/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119#about) for the Deployable Architecture in the {{site.data.keyword.cloud_notm}} catalog. It loads the Core Security Services panel. On this panel, you can review the product version, Variation, architecture overview, permissions, security and compliance, help, and pricing.
-* Click **Add to project**.
+- Locate the Core Security Services [tile](/catalog/7df1e4ca-d54c-4fd0-82ce-3d13247308cd/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119#about) for the Deployable Architecture in the {{site.data.keyword.cloud_notm}} catalog. It loads the Core Security Services panel. On this panel, you can review the product version, Variation, architecture overview, permissions, security and compliance, help, and pricing.
+- Click **Add to project**.
 
     ![image](images/ccs_catalog_details.png)
 
-* Select **Create new** and enter the following details:
-   - Name and Description (for example, "Core Security Services")
-   - Region and Resource Group for the project. For example, for evaluation purposes, you can select the region the closest to you, and the Default resource group. For more insights on the recommended production topology, refer to the Enterprise account architecture Central administration account [white paper](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account).
-   - Configuration Name (name of the automation in the project, for example, "ccs_cfg", "ccs_dev" or "ccs_prod", ideally matching the deployment target, but this can be any name)
+- Select **Create new** and enter the following details:
+    - Name and description (for example, `Core Security Services`).
+    - Region and resource group for the project. For example, for evaluation purposes, you can select the region the closest to you, and the Default resource group. For more information about the recommended production topology, see the Enterprise account architecture central administration account [white paper](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account).
+    - Configuration name (name of the automation in the project, for example, `ccs_cfg`, `ccs_dev`, or `ccs_prod`, ideally matching the deployment target, but this can be any name).
 
         ![project](images/ccs_add_to_project.png)
 
-* Click **Add** (or **Create** if this is the first project in the account) at the lower right of the modal window to complete.
+- Click **Add** (or **Create** if this is the first project in the account) at the lower right of the modal window to complete.
 
 ### 2. Set the input configuration for the stack
 {: #deployment-guide-details-input}
 
-After completing `Step 2 - Deploy the Stack in a new project from the catalog, you are directed to a page allowing you to enter the configuration for your deployment:
-* Under **Security** > **Authentication**, enter the API key from the prereqs in the `api_key` field.
-  ![inputs](images/ccs_add_api_key.png)
-* Under Required, input a prefix. This prefix is appended to the name of most resources created by automation, ensuring uniqueness and avoiding clashes when provisioning names in the same account. **Note:** Prefixes can't contain underscores.
-* Select the region and provide a resource group name where you would like the resources to be created.
-* Under Optional, input the {{site.data.keyword.secrets-manager_short}} and security services center's plan field. While not necessary for deploying {{site.data.keyword.cloud_notm}} resources, it is recommended and required to enable the building and deployment of the sample app.
+After completing the previous step, you are directed to a page allowing you to enter the configuration for your deployment:
+
+- Under **Security** > **Authentication**, enter the API key from the prereqs in the `api_key` field.
+    ![inputs](images/ccs_add_api_key.png)
+
+- Under Required, input a prefix. This prefix is appended to the name of most resources created by automation, ensuring uniqueness and avoiding clashes when provisioning names in the same account. **Note:** Prefixes can't contain underscores.
+- Select the region and provide a resource group name where you would like the resources to be created.
+- Under Optional, input the {{site.data.keyword.secrets-manager_short}} and security services center's plan field. While not necessary for deploying {{site.data.keyword.cloud_notm}} resources, it is recommended and required to enable the building and deployment of the sample app.
 
 You can explore the other available inputs, such as the region and resource group name (under the required tab), leave them as is, or modify them as needed.
 
@@ -82,7 +84,7 @@ You are directed to a screen looking like:
 
 ![validate](images/ccs_project_configuration_stack.png)
 
-Note: in some rare occurrences, the first member of the stack might not be marked as "Ready to validate". Refreshing the page in your browser window to solve this problem.
+If the first member of the stack is not be marked as **Ready to validate, refresh the page in your browser.
 
 #### Deployment through the UI
 {: #deployment-guide-details-deploy-architecture-ui}
@@ -91,17 +93,17 @@ Note: in some rare occurrences, the first member of the stack might not be marke
 
     ![validate button](images/ccs_validate.png)
 
-2. Wait for validation.
+1. Wait for validation.
 
     ![validation](images/ccs_waiting_for_validation.png)
 
-3. Approve and click the **Deploy**.
+1. Approve and click the **Deploy**.
 
     ![deploy](images/ccs_approve_and_deploy.png)
 
-4. Wait for deployment.
+1. Wait for deployment.
 
-5. Repeat step 1 for the next configuration in the architecture. Note that as you progress in deploying the initial kms configuration, you are given the option to validate and deploy multiple configurations in parallel.
+1. Repeat step 1 for the next configuration in the architecture. Note that as you progress in deploying the initial kms configuration, you are given the option to validate and deploy multiple configurations in parallel.
 
     ![deployed](images/ccs_stack_deployed.png)
 
@@ -116,7 +118,7 @@ At this point, the infrastructure platform services have been successfully deplo
 To view the deployment of the resources related to core security services, follow these steps:
 1. **Access the Resource list View**: Navigate to the Resource List Icon on [Left Navigation](https://cloud.ibm.com/resources) in the target account.
 
-2. **Select the Resource Group and Region**: Choose the resource group and region where the infrastructure was deployed. The resource group name is based on the prefix and resource_group_name inputs of the deployable architecture.
+1. **Select the Resource Group and Region**: Choose the resource group and region where the infrastructure was deployed. The resource group name is based on the prefix and resource_group_name inputs of the deployable architecture.
 
     ![deployed_resources](images/ccs_deployed_resources.png)
 
@@ -168,7 +170,7 @@ You can add or remove inputs and outputs surfaced at the stack level by followin
 
 After you make modifications to your stack in the project, you can share it with others through a private {{site.data.keyword.cloud_notm}} catalog. To do so, follow these steps:
 1. Deploy the stack at least once: You need to deploy the stack first to allow importing the stack definition to a private catalog.
-2. Select the **Add to private catalog** option in the menu on the stack configuration.
+1. Select the **Add to private catalog** option in the menu on the stack configuration.
 
 This will allow you to share your modified stack with others through a private {{site.data.keyword.cloud_notm}} catalog.
 
@@ -194,19 +196,19 @@ Undeploy each configuration in the project, one by one, through the UI, starting
 #### 3. Delete reclamation claims
 {: #deployment-guide-undeploy-reclamation}
 
-Before undeploying the "1 - core-security-services-kms", you need to delete the reclamation claims for the resources deleted from the previous steps. Reclamation allows you to restore deleted resources for up to one week. However, any reclamation that is still active prevents from deleting the resource group managed by the "1 - core-security-services-kms":
+Before undeploying the `1 - core-security-services-kms`, you need to delete the reclamation claims for the resources deleted from the previous steps. Reclamation allows you to restore deleted resources for up to one week. However, any reclamation that is still active prevents from deleting the resource group managed by the `1 - core-security-services-kms`:
 
-* Log in to the target {{site.data.keyword.cloud_notm}} account with the CLI
-* Run `ibmcloud resource reclamations` to view the full list of reclamation. You can identify the exact reclamations to delete as they are planned to be deleted in one week after the date for which the resource was deleted.
-* For each reclamation, execute `ibmcloud resource reclamation-delete <reclamation-id>`. The reclamation-id is the ID provided in the results from ibmcloud resource reclamations listing.
-* Run `ibmcloud resource reclamations` again to ensure the reclamations have been fully deleted
+- Log in to the target {{site.data.keyword.cloud_notm}} account with the CLI
+- Run `ibmcloud resource reclamations` to view the full list of reclamation. You can identify the exact reclamations to delete as they are planned to be deleted in one week after the date for which the resource was deleted.
+- For each reclamation, execute `ibmcloud resource reclamation-delete <reclamation-id>`. The reclamation-id is the ID provided in the results from ibmcloud resource reclamations listing.
+- Run `ibmcloud resource reclamations` again to ensure the reclamations have been fully deleted
 
 More details are available [here](/docs/account?topic=account-resource-reclamation&interface=cli).
 
-#### 4. Undeploy "1 - core-security-services-kms"
+#### 4. Undeploy `1 - core-security-services-kms`
 {: #deployment-guide-undeploy-kms}
 
-You can now undeploy "11 - core-security-services-kmse" in the project.
+You can now undeploy `1 - core-security-services-kms` in the project.
 
 #### 5. Delete project
 {: #deployment-guide-undeploy-project}

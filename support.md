@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-17"
 
 keywords: security services, deployable architecture, IaC, help, support
 
@@ -37,7 +37,7 @@ To ensure that the support team can start investigating your case to provide a t
 1. From your Schematics log, provide the architecture name, source URL, and version.
    a. In the {{site.data.keyword.cloud_notm}} console, go to **Schematics** > **Workspaces** > **deployable architecture instance**.
    b. Copy and paste into the case details the portion of the log that provides the architecture information. The following is an example of what should be copied:
-      
+
       ```sh
       2023/04/06 18:11:43 Related Workspace: name=deploy-arch-ibm-slz-ocp-04-06-2023, sourcerelease=(not specified), sourceurl=https modules/terraform-ibm-landing-zone/archive/v3.1.2.tar.gz,tolder=terratorm-ibm-landing-zone-3.1.2/patterns/roks
        ```
@@ -46,11 +46,11 @@ To ensure that the support team can start investigating your case to provide a t
    a. In the {{site.data.keyword.cloud_notm}} console, go to **your project** > **Configurations** > **deployable architecture instance**.
    b. Depending on where you are in your deployment process go to **Viewing validation results** or **Viewing last deployment**. Take a screenshot of the results and add it to your support case.
 
-## Routing your support case expeditiously 
+## Routing your support case expeditiously
 {: #support-case-routing}
 
-To get your support case routed correctly to speed up resolution, make sure that you select the right product when you open the case. 
+To get your support case routed correctly to speed up resolution, make sure that you select the right product when you open the case.
 
-If you're having issues getting the deployable architecture deployed, use the name of the deployable architecture as it is listed in the catalog. 
+If you're having issues getting the deployable architecture deployed, use the name of the deployable architecture as it is listed in the catalog.
 
-However, if you successfully deployed and are instead having an issue with a service in the deployable architecture, set that service as the product name in the case. 
+However, if you successfully deployed and are instead having an issue with a service in the deployable architecture, set that service as the product name in the case.

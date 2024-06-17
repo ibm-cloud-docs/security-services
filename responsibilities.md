@@ -4,7 +4,7 @@ copyright:
   years: 2024
 lastupdated: "2024-06-17"
 
-keywords: 
+keywords:
 
 subcollection: security-services
 
@@ -13,7 +13,7 @@ subcollection: security-services
 {{site.data.keyword.attribute-definition-list}}
 
 # Understanding your responsibilities when you use the Core security services deployable architectures
-{: #your-id}
+{: #shared-resp}
 
 
 

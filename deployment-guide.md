@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-17"
 
 keywords: security services, deployable architecture, IaC
 
@@ -27,7 +27,7 @@ By leveraging this architecture, you can accelerate your deployment and tailor i
 By using this architecture, you can:
 
 * **Establish Trust:** The architecture ensures trust by configuring the IBM Cloud account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
-* **Ensure Observability:** The architecture provides observability by deploying services such as IBM Log Analysis, IBM Monitoring, IBM Activity Tracker, and log retention through Cloud Object Storage buckets.
+* **Ensure Observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
 * **Implement Security:** The architecture ensures security by deploying IBM Key Protect and IBM Secrets Manager.
 * **Achieve Regulatory Compliance:** The architecture ensures regulatory compliance by implementing centralize Key Management, centralize secrets management, and along with IBM Security Compliance Center and Workload Protection (SCC) for secure application lifecycle management.
 

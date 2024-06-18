@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-17"
+lastupdated: "2024-06-18"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,6 +15,10 @@ subcollection: security-services
 # Known issues with landing zone deployable architectures
 {: #known-issues}
 
+## Object Storage buckets deployed without activity tracking
+{: #ki-cos-no-at}
+
+Because of a limitation with the IBM Terraform provider, activity tracking is not enabled for {{site.data.keyword.cos_full_notm}} buckets that are created by the core security services deployable architecture. After the provider supports the feature, a new version of the deployable architecture will be released.
 
 ## Error when you try to undeploy key management
 {: #ki-kms-undeploy}

@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# My deployment failed when creating a resource
+# My deployment fails when creating a resource
 {: #ts-platform-metrics}
 {: troubleshoot}
 

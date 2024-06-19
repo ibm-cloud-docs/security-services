@@ -12,15 +12,15 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deploying Core Security Services on {{site.data.keyword.cloud_notm}}
+# Deploying the Core Security Services deployable architecture
 {: #deployment-guide}
 
-The Core Security Services deployable architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. {{site.data.keyword.cloud_notm}}'s core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. The primary goal of this deployable architecture is to provide a framework for secure and compliant {{site.data.keyword.cloud_notm}} Workloads.
+The core security services deployable architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. {{site.data.keyword.cloud_notm}}'s core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. The primary goal of this deployable architecture is to provide a framework for secure and compliant {{site.data.keyword.cloud_notm}} Workloads.
 
 ## Objectives and benefits
 {: #deployment-guide-objectives}
 
-This deployable architecture is designed to showcase a fully automated deployment of {{site.data.keyword.cloud_notm}} Core Security Services and its dependencies through {{site.data.keyword.cloud_notm}} Project, providing a flexible and customizable foundation for your own application deployments on {{site.data.keyword.cloud_notm}}.
+This deployable architecture is designed to showcase a fully automated deployment of {{site.data.keyword.cloud_notm}} core security services and its dependencies through {{site.data.keyword.cloud_notm}} Project, providing a flexible and customizable foundation for your own application deployments on {{site.data.keyword.cloud_notm}}.
 
 By leveraging this architecture, you can accelerate your deployment and tailor it to meet your unique business needs and enterprise goals.
 
@@ -42,7 +42,7 @@ Before deploying the stack, make sure you check out the [Prerequisites](/docs/se
 ### 1. Deploy the stack in a new project from catalog
 {: #deployment-guide-details-deploy}
 
-- Locate the Core Security Services [tile](/catalog/7df1e4ca-d54c-4fd0-82ce-3d13247308cd/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119#about) for the Deployable Architecture in the {{site.data.keyword.cloud_notm}} catalog. It loads the Core Security Services panel. On this panel, you can review the product version, Variation, architecture overview, permissions, security and compliance, help, and pricing.
+- Locate the Core Security Services [tile](/catalog/7df1e4ca-d54c-4fd0-82ce-3d13247308cd/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119#about) for the deployable architecture in the {{site.data.keyword.cloud_notm}} catalog. It loads the Core Security Services panel. On this panel, you can review the product version, Variation, architecture overview, permissions, security and compliance, help, and pricing.
 - Click **Add to project**.
 
     ![image](images/ccs_catalog_details.png)
@@ -84,7 +84,7 @@ You are directed to a screen looking like:
 
 ![validate](images/ccs_project_configuration_stack.png)
 
-If the first member of the stack is not be marked as **Ready to validate, refresh the page in your browser.
+If the first member configuration of the stack is not be marked as **Ready to validate, refresh the page in your browser.
 
 #### Deployment through the UI
 {: #deployment-guide-details-deploy-architecture-ui}
@@ -103,7 +103,7 @@ If the first member of the stack is not be marked as **Ready to validate, refres
 
 1. Wait for deployment.
 
-1. Repeat step 1 for the next configuration in the architecture. Note that as you progress in deploying the initial kms configuration, you are given the option to validate and deploy multiple configurations in parallel.
+1. Repeat step 1 for the next member configuration in the architecture. Note that as you progress in deploying the initial key management configuration, you are given the option to validate and deploy multiple configurations in parallel.
 
     ![deployed](images/ccs_stack_deployed.png)
 
@@ -158,7 +158,7 @@ This applies to the following configurations:
 {: #deployment-guide-customizations-managing-inputs-outputs}
 
 You can add or remove inputs and outputs surfaced at the stack level by following these steps:
-1. Select the stack configuration
+1. Select the member configuration
 
     ![stack definition](images/ccs_define_stack.png)
 1. You are presented with a screen allowing you to promote any of the configuration inputs or outputs at the stack level
@@ -170,7 +170,7 @@ You can add or remove inputs and outputs surfaced at the stack level by followin
 
 After you make modifications to your stack in the project, you can share it with others through a private {{site.data.keyword.cloud_notm}} catalog. To do so, follow these steps:
 1. Deploy the stack at least once: You need to deploy the stack first to allow importing the stack definition to a private catalog.
-1. Select the **Add to private catalog** option in the menu on the stack configuration.
+1. Select the **Add to private catalog** option in the menu on the member configuration.
 
 This will allow you to share your modified stack with others through a private {{site.data.keyword.cloud_notm}} catalog.
 
@@ -191,12 +191,12 @@ To undeploy the infrastructure created by the automation, complete the following
 #### 1. Undeploy configurations in the project
 {: #deployment-guide-undeploy-configs}
 
-Undeploy each configuration in the project, one by one, through the UI, starting from the `4b - core-security-services-sm` and working your way up in the stack up to, and inclusive of `1 - core-security-services-kms`. Wait for full undeployment of a configuration before starting to undeploy the next configuration up in the stack.
+Undeploy each member configuration in the project, one by one, through the UI, starting from the `4b - Secrets Manager` and working your way up in the stack up to, and inclusive of `1 - Key management`. Wait for full undeployment of a configuration before starting to undeploy the next configuration up in the stack.
 
 #### 3. Delete reclamation claims
 {: #deployment-guide-undeploy-reclamation}
 
-Before undeploying the `1 - core-security-services-kms`, you need to delete the reclamation claims for the resources deleted from the previous steps. Reclamation allows you to restore deleted resources for up to one week. However, any reclamation that is still active prevents from deleting the resource group managed by the `1 - core-security-services-kms`:
+Before undeploying the `1 - Key management`, you need to delete the reclamation claims for the resources deleted from the previous steps. Reclamation allows you to restore deleted resources for up to one week. However, any reclamation that is still active prevents from deleting the resource group managed by the `1 - Key management`:
 
 - Log in to the target {{site.data.keyword.cloud_notm}} account with the CLI
 - Run `ibmcloud resource reclamations` to view the full list of reclamation. You can identify the exact reclamations to delete as they are planned to be deleted in one week after the date for which the resource was deleted.
@@ -205,12 +205,12 @@ Before undeploying the `1 - core-security-services-kms`, you need to delete the 
 
 More details are available [here](/docs/account?topic=account-resource-reclamation&interface=cli).
 
-#### 4. Undeploy `1 - core-security-services-kms`
+#### 4. Undeploy `1 - Key management`
 {: #deployment-guide-undeploy-kms}
 
-You can now undeploy `1 - core-security-services-kms` in the project.
+You can now undeploy `1 - Key management` in the project.
 
 #### 5. Delete project
 {: #deployment-guide-undeploy-project}
 
-After all configurations are undeployed, you can delete the project. You can also delete the project first to delete all configurations if you do not want to delete stacks one by one.
+After all member configurations are undeployed, you can delete the project. You can also delete the project first to delete all member configurations if you do not want to delete stacks one by one.

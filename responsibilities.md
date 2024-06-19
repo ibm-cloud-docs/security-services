@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-17"
+lastupdated: "2024-06-19"
 
 keywords:
 
@@ -12,12 +12,12 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding your responsibilities when you use the Core security services deployable architectures
+# Understanding your responsibilities when you use the core security services deployable architectures
 {: #shared-resp}
 
 
 
-Learn about the management responsibilities and terms and conditions that you have when you use one of the Core security services deployable architectures.
+Learn about the management responsibilities and terms and conditions that you have when you use one of the core security services deployable architectures.
 {: shortdesc}
 
 - For more information about the responsibilities for you and for {{site.data.keyword.IBM}} when you use a deployable architecture, see [Understanding your responsibilities when you use deployable architectures](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures).
@@ -26,7 +26,7 @@ Learn about the management responsibilities and terms and conditions that you ha
 
 
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a Core security services deployable architecture.
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a core security services deployable architecture.
 
 
 
@@ -40,7 +40,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-The Core security services deployable architecture does not identify specific responsibilities in this area. For information about the general change management responsibilities when you use IBM deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
+The core security services deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
 
 
 ## Change management
@@ -53,7 +53,7 @@ The Core security services deployable architecture does not identify specific re
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-The Core security services deployable architecture does not identify specific responsibilities in this area. For information about the general change management responsibilities when you use IBM deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
+The core security services deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
 
 
 ## Identity and access management
@@ -66,13 +66,13 @@ Identity and access management includes tasks such as authentication, authorizat
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |------|-------------------------------------------------|-----------------------|
-| Secure with least privilege | Document the minimal IAM access requirements to run the deployable architecture. |  Ensure the documented IAM access requirements are met. |
+| Secure with least privilege | Document the minimal IAM access requirements to run the deployable architecture. |  Ensure that the documented IAM access requirements are met. |
 | Manage secrets | | * Generate the necessary secrets (IAM API keys) and configure trusted profiles that are required for the deployable architecture. \n * Manage generated secrets by following secure best practices. |
 {: row-headers}
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
-For information about the general Identity and access managementresponsibilities when you use IBM deployable architectures, see [Identity and access management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#iam-responsibilities-da).
+For more information about the general Identity and access management responsibilities when you use deployable architectures, see [Identity and access management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#iam-responsibilities-da).
 
 
 ## Security and regulation compliance
@@ -91,7 +91,7 @@ Security and regulation compliance includes tasks such as security controls impl
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
-For information about the general Security and regulation compliance responsibilities when you use IBM deployable architectures, see [Security and regulation compliance](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#security-compliance-da).
+For more information about the general Security and regulation compliance responsibilities when you use deployable architectures, see [Security and regulation compliance](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#security-compliance-da).
 
 ## Disaster recovery
 {: #disaster-recovery}
@@ -101,4 +101,6 @@ For information about the general Security and regulation compliance responsibil
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
-The Core security services deployable architecture does not identify specific responsibilities in this area. For information about the general BCDR responsibilities when you use IBM deployable architectures, see [Disaster recovery](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#disaster-recovery-da).
+| Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
+|------|-------------------------------------------------|-----------------------|
+| Ensure availability and recovery of secrets | | Back up secrets. See [Understanding high availability and disaster recovery for Secrets Manager](/docs/secrets-manager?topic=secrets-manager-ha-dr). |

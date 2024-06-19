@@ -16,8 +16,10 @@ toc:
   - navgroup:
       id: overview
       topics:
-      - overview.md
-      - release-notes.md
+      - topic: overview.md
+        navtitle: Overview
+      - topic: release-notes.md
+        navtitle: Release notes
   - navgroup:
       id: architecture
       topics:
@@ -45,5 +47,5 @@ toc:
       - topicgroup:
           label: Troubleshooting
           topics:
-          - ts-deploy.md
-          - ts-keyring.md
+          - ts-sm-trial.md
+          - ts-platform-metrics.md

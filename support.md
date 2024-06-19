@@ -19,9 +19,9 @@ If you experience an issue or have questions when you deploy a core security ser
 {: shortdesc}
 
 
-* Review the [troubleshooting documentation](/docs/security-services?topic=security-services-troubleshoot) to troubleshoot and resolve common issues.
-* ![{{site.data.keyword.cloud_notm}} icon](../images/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
-* ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services/issues){: external} to see whether other users experienced the same problem.
+- Review the [troubleshooting documentation](/docs/security-services?topic=security-services-troubleshoot) to troubleshoot and resolve common issues.
+- ![{{site.data.keyword.cloud_notm}} icon](../icons/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+- ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services/issues){: external} to see whether other users experienced the same problem.
 
 
 

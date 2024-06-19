@@ -17,6 +17,7 @@ toc:
       id: overview
       topics:
       - overview.md
+      - release-notes.md
   - navgroup:
       id: architecture
       topics:

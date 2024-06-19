@@ -16,6 +16,7 @@ subcollection: security-services
 {: #known-issues}
 
 Because issues change frequently, check this list regularly.
+{: shortdesc}
 
 ## Object Storage buckets deployed without activity tracking
 {: #ki-cos-no-at}

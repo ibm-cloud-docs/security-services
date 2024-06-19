@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-17"
+lastupdated: "2024-06-19"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,7 +12,7 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Core Security Services on {{site.data.keyword.cloud_notm}}
+# Deploying Core Security Services on {{site.data.keyword.cloud_notm}}
 {: #deployment-guide}
 
 The Core Security Services deployable architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. {{site.data.keyword.cloud_notm}}'s core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. The primary goal of this deployable architecture is to provide a framework for secure and compliant {{site.data.keyword.cloud_notm}} Workloads.

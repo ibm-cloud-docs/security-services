@@ -33,6 +33,10 @@ toc:
       topics:
       - deployment-guide.md
   - navgroup:
+      id: howto
+      topics:
+      - undeploy.md
+  - navgroup:
       id: reference
       topics:
       - topic: responsibilities.md

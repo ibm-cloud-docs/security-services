@@ -15,7 +15,7 @@ subcollection: security-services
 # Release notes for the core security services deployable architecture
 {: #css-relnotes}
 
-Use these release notes to learn about the latest updates to the core security services deployable architecture: VPC landing zone, VSI on VPC landing zone, and Red Hat OpenShift Container Platform on VPC landing zone. The entries are grouped by date.
+Use these release notes to learn about the latest updates to the core security services deployable architecture. The entries are grouped by date.
 {: shortdesc}
 
 ## June 2024
@@ -26,6 +26,6 @@ Use these release notes to learn about the latest updates to the core security s
 {: release-note}
 
 Introducing the core security services deployable architecture
-:   The core security services deployable architecture is released: The deployable architecture deploys the following core security services: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability. 
+:   The core security services deployable architecture is released: The deployable architecture deploys the following core security services: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
 
     For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/blog/announcement/projects-and-cost-estimation/) and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/blog/turn-your-terraform-templates-into-deployable-architectures/).

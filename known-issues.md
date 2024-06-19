@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-18"
+lastupdated: "2024-06-19"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,8 +12,10 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Known issues with landing zone deployable architectures
+# Known issues with core security services deployable architectures
 {: #known-issues}
+
+Because issues change frequently, check this list regularly.
 
 ## Object Storage buckets deployed without activity tracking
 {: #ki-cos-no-at}

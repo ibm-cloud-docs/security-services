@@ -36,7 +36,8 @@ Make sure that you comply with the prerequisites in the [planning](/docs/securit
 
     For more information about the enterprise account structures, see the [Central administration account](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account) white paper.
 
-    1.  Name your project, enter a description, and specify a configuration name. Click **Create**.
+    1.  Name your project, enter a description, and specify a configuration name.
+    1.  Click **Create**.
 
 ## Step 2. Configure your stack
 {: #deploy-configure}

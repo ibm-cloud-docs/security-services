@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-06-20"
 
 keywords: security services, deployable architecture, IaC
 
@@ -23,8 +23,9 @@ By leveraging this architecture, you can accelerate your deployment and tailor i
 
 By using this architecture, you can:
 
-* **Establish trust:** The architecture ensures trust by configuring the {{site.data.keyword.cloud_notm}} account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
-* **Ensure observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
+
+
+* **Ensure observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, {{site.data.keyword.en_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
 * **Implement security:** The architecture ensures security by deploying {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}}.
 * **Achieve regulatory compliance:** The architecture ensures regulatory compliance by implementing centralized key management, centralized secrets management, and along with {{site.data.keyword.sysdigsecure_full_notm}}, secure application lifecycle management.
 
@@ -40,9 +41,4 @@ This deployable architecture supports these features.
 * Creates and configures an {{site.data.keyword.cos_full_notm}} instance and multiple {{site.data.keyword.cos_short}} bucket that is encrypted by {{site.data.keyword.keymanagementserviceshort}}.
 * Creates and configures service-to-service authorizations for the following services: KMS, {{site.data.keyword.en_short}}, {{site.data.keyword.cos_short}}, {{site.data.keyword.secrets-manager_short}}, and Security and Compliance Center.
 * Creates and configures IBM Observability components {{site.data.keyword.atracker_short}}, {{site.data.keyword.monitoringlong_notm}}, and {{site.data.keyword.loganalysislong_notm}}.
-* Ensures compliance with the specific controls for the [CIS IBM Cloud Foundations Benchmark profile](/docs/security-compliance?topic=security-compliance-cis-benchmark-profile):
-    * Ensures {{site.data.keyword.cos_short}} encryption is enabled with BYOK.
-    * Ensures {{site.data.keyword.cloudaccesstrailshort}} data is encrypted at rest.
-    * Ensures {{site.data.keyword.cloudaccesstrailshort}} trails are integrated with LogDNA Logs.
-    * Ensures {{site.data.keyword.keymanagementserviceshort}} has automated rotation for customer-managed keys.
-    * Ensures the {{site.data.keyword.keymanagementserviceshort}} service has high availability.
+* Ensures compliance with the controls in the CIS IBM Cloud Foundations Benchmark profile. That profile validates whether your resource configurations meet the baseline requirements that are identified by the Center for Internet Security. For more information, see the [profile change log](/docs/security-compliance?topic=security-compliance-predefined-profiles)

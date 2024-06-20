@@ -1,0 +1,56 @@
+---
+
+copyright:
+  years: 2024
+lastupdated: "2024-06-20"
+
+keywords: security services, deployable architecture, IaC
+
+subcollection: security-services
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# Customization options
+{: #customize-css}
+
+The core security services deployable architecture supports several customization options. These are some common options.
+{: shortdesc}
+
+### Editing member configurations
+{: #customize-edit-config}
+
+Each member configuration in the deployable architecture stacks includes a large number of input parameters. You can edit the configuration to change the default values.
+
+For example, by editing the member configuration, you can accomplish these things:
+
+- Use an existing instance of {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, or other service.
+- Deploy to an existing resource group.
+- Configure the endpoint type as private or public.
+- Reuse existing {{site.data.keyword.keymanagementserviceshort}} keys.
+- Tune the parameters of individual services.
+
+To edit the member configuration, select **Edit** from the Actions icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the member configuration row.
+
+## Removing configurations
+{: #customize-remove-config}
+
+You can remove a member configuration from the stack that other configurations don't depend on.
+
+In the core security services deployable architecture, you can remove the following configurations:
+
+- Observability
+- {{site.data.keyword.compliance_short}}
+- {{site.data.keyword.secrets-manager_short}}
+
+To remove a member configuration, select **Remove from Stack** from the Actions icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the member configuration row.
+
+## Managing inputs and outputs
+{: #customize-manage-vars}
+
+You can add and remove input and output variables that are available in the core security services deployable architecture by following these steps:
+
+1.  In your project, click the **Configurations** tab.
+1.  Select a member configuration.
+1.  From the deployed details window, you can promote any of the configuration inputs or outputs.

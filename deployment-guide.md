@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-06-20"
 
 keywords: security services, deployable architecture, IaC
 
@@ -13,204 +13,80 @@ subcollection: security-services
 {{site.data.keyword.attribute-definition-list}}
 
 # Deploying the Core Security Services deployable architecture
-{: #deployment-guide}
+{: #deploy-css}
 
-The core security services deployable architecture is a preconfigured set of infrastructure as code (IaC) assets that are deployed and configured based on the recommended best practices. {{site.data.keyword.cloud_notm}}'s core security services are crucial for ensuring robust security and compliance for cloud-based applications and data. The primary goal of this deployable architecture is to provide a framework for secure and compliant {{site.data.keyword.cloud_notm}} Workloads.
+You can deploy a deployable architecture from the {{site.data.keyword.cloud_notm}} catalog.
+{: shortdesc}
 
-## Objectives and benefits
-{: #deployment-guide-objectives}
+To deploy the core security services architecture through the {{site.data.keyword.cloud_notm}} catalog, follow these steps.
 
-This deployable architecture is designed to showcase a fully automated deployment of {{site.data.keyword.cloud_notm}} core security services and its dependencies through {{site.data.keyword.cloud_notm}} Project, providing a flexible and customizable foundation for your own application deployments on {{site.data.keyword.cloud_notm}}.
-
-By leveraging this architecture, you can accelerate your deployment and tailor it to meet your unique business needs and enterprise goals.
-
-By using this architecture, you can:
-
-- **Establish trust:** The architecture ensures trust by configuring the {{site.data.keyword.cloud_notm}} account to align with compliance settings as defined in the [Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about) framework.
-- **Ensure observability:** The architecture provides observability by deploying services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
-- **Implement security:** The architecture ensures security by deploying IBM {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}}.
-- **Achieve regulatory compliance:** The architecture ensures regulatory compliance by implementing centralized key management, centralized secrets management, and along with {{site.data.keyword.sysdigsecure_full_notm}}, secure application lifecycle management.
+Make sure that you comply with the prerequisites in the [planning](/docs/security-services?topic=security-services-prereqs) topic.
+{: important}
 
 
-## Deployment details
-{: #deployment-guide-details}
 
-To deploy this architecture, follow these steps.
+## Step 1. Add the architecture to a project
+{: #deploy-details-deploy}
 
-Before deploying the stack, make sure you check out the [Prerequisites](/docs/security-services?topic=security-services-prereqs) first.
+1.  Go to the {{site.data.keyword.cloud_notm}} [catalog](/catalog#reference_architecture){: external} and search for the Core Security Services deployable architecture.
+1.  Click the tile for the deployable architecture to open the details.
+1.  Select the latest product version in the Architecture section.
+1.  Click **Review deployment options**.
+1.  Select the **Add to project** deployment type in Deployment options, and then click **Add to project**.
 
-### 1. Deploy the stack in a new project from catalog
-{: #deployment-guide-details-deploy}
+    For more information about the enterprise account structures, see the [Central administration account](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account) white paper.
 
-- Locate the Core Security Services [tile](/catalog/7df1e4ca-d54c-4fd0-82ce-3d13247308cd/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119#about) for the deployable architecture in the {{site.data.keyword.cloud_notm}} catalog. It loads the Core Security Services panel. On this panel, you can review the product version, Variation, architecture overview, permissions, security and compliance, help, and pricing.
-- Click **Add to project**.
+    1.  Name your project, enter a description, and specify a configuration name. Click **Create**.
 
-    ![image](images/ccs_catalog_details.png)
+## Step 2. Configure your stack
+{: #deploy-configure}
 
-- Select **Create new** and enter the following details:
-    - Name and description (for example, `Core Security Services`).
-    - Region and resource group for the project. For example, for evaluation purposes, you can select the region the closest to you, and the Default resource group. For more information about the recommended production topology, see the Enterprise account architecture central administration account [white paper](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account).
-    - Configuration name (name of the automation in the project, for example, `ccs_cfg`, `ccs_dev`, or `ccs_prod`, ideally matching the deployment target, but this can be any name).
-
-        ![project](images/ccs_add_to_project.png)
-
-- Click **Add** (or **Create** if this is the first project in the account) at the lower right of the modal window to complete.
-
-### 2. Set the input configuration for the stack
-{: #deployment-guide-details-input}
-
-After completing the previous step, you are directed to a page allowing you to enter the configuration for your deployment:
-
-- Under **Security** > **Authentication**, enter the API key from the prereqs in the `api_key` field.
-    ![inputs](images/ccs_add_api_key.png)
-
-- Under Required, input a prefix. This prefix is appended to the name of most resources created by automation, ensuring uniqueness and avoiding clashes when provisioning names in the same account. **Note:** Prefixes can't contain underscores.
-- Select the region and provide a resource group name where you would like the resources to be created.
-- Under Optional, input the {{site.data.keyword.secrets-manager_short}} and security services center's plan field. While not necessary for deploying {{site.data.keyword.cloud_notm}} resources, it is recommended and required to enable the building and deployment of the sample app.
-
-You can explore the other available inputs, such as the region and resource group name (under the required tab), leave them as is, or modify them as needed.
-
-When you're ready, click **Save** at the top of the screen. After validating the input values from the earlier step, the button changes to **View stack configurations**.
-
-### 3. Deploy the architecture
-{: #deployment-guide-details-deploy-architecture}
-
-Navigate to the project deployment view by clicking the project name in the breadcrumb menu.
-
-![menu](images/ccs_project_deployment_view.png)
+Create your configuration by setting variables.
 
 
-You are directed to a screen looking like:
+1.  From the **Security** panel, select the authentication method that you want to use to deploy your architecture.
 
-![validate](images/ccs_project_configuration_stack.png)
+    Add the API key that you identified in the [planning](/docs/security-services?topic=security-services-prereqs) topic.
 
-If the first member configuration of the stack is not be marked as **Ready to validate, refresh the page in your browser.
 
-#### Deployment through the UI
-{: #deployment-guide-details-deploy-architecture-ui}
+1.  In the **Security** > **Authentication** tab in the **Configure** section, select the API key
 
-1. Click **Validate**.
+1.  Enter values for required fields from the **Required** tab.
+
+    1.  Enter a prefix. This prefix is added to the beginning of the name of most resources that are created by the deployable architecture. The prefix helps to make sure that the resource names are unique, and it avoids clashes with other resources in the same account.
+    1.  Select the region to create the resources, and provide a resource group name.
+1.  Review values for optional fields from the **Optional** tab:
+
+    1.  Select the pricing plans for {{site.data.keyword.secrets-manager_short}} and {{site.data.keyword.compliance_short}}. These fields are optional fields. However, they are required to build the sample app.
+    1.  Review the other input variables.
+
+1.  Click **Save**. After the input values are validated, the button changes to **View stack configurations**.
+
+## Step 3. Validate and deploy the architecture
+{: #deploy-validate}
+
+1.  In your project, click the **Configurations** tab.
+
+    If the first member configuration of the stack (`1 - Key management`) is not marked as **Ready to validate**, refresh the page in your browser.
+1.  Click **Validate** in **Draft status** in the `1 - Key management` row.
 
     ![validate button](images/ccs_validate.png)
+1.  Approve the configuration and click **Deploy** after validation successfully completes.
+1.  After you deploy the initial member configuration, you can validate and deploy the remaining member configuration at the same time. Repeat these deployment steps for each member configuration in the architecture.
 
-1. Wait for validation.
+The core security services deployable architecture is now deployed in the target account.
 
-    ![validation](images/ccs_waiting_for_validation.png)
+## Viewing resources created by the deployable architecture
+{: #deploy-view-resources}
 
-1. Approve and click the **Deploy**.
+View the resources created by the deployable architecture.
 
-    ![deploy](images/ccs_approve_and_deploy.png)
+1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** in the target account.
+1.  Choose the resource group and region where the infrastructure was deployed. The resource group name is based on the `prefix` and `resource_group_name` inputs of the deployable architecture configuration.
 
-1. Wait for deployment.
+## Next steps
+{: #next-steps}
 
-1. Repeat step 1 for the next member configuration in the architecture. Note that as you progress in deploying the initial key management configuration, you are given the option to validate and deploy multiple configurations in parallel.
+- Share your deployable architecture with users in your account or other accounts by using a [private catalog](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-share&interface=ui). Sharing to a private catalog makes your deployable architecture available in a private {{site.data.keyword.cloud_notm}} catalog.
 
-    ![deployed](images/ccs_stack_deployed.png)
-
-### 4. Post deployment steps
-{: #deployment-guide-details-deploy-architecture-more-steps}
-
-At this point, the infrastructure platform services have been successfully deployed in the target account.
-
-#### Viewing core security services resources
-{: #deployment-guide-details-deploy-architecture-more-steps-view}
-
-To view the deployment of the resources related to core security services, follow these steps:
-1. **Access the Resource list View**: Navigate to the Resource List Icon on [Left Navigation](https://cloud.ibm.com/resources) in the target account.
-
-1. **Select the Resource Group and Region**: Choose the resource group and region where the infrastructure was deployed. The resource group name is based on the prefix and resource_group_name inputs of the deployable architecture.
-
-    ![deployed_resources](images/ccs_deployed_resources.png)
-
-## Customization options
-{: #deployment-guide-customizations}
-
-There are numerous customization possibilities available out of the box. This section explores some common scenarios, but is not exhaustive.
-
-### Editing individual configurations
-{: #deployment-guide-customizations-editing-config}
-
-Each configuration in the deployed stack surfaces a large number of input parameters. You can directly edit each parameter to tailor your deployment by selecting the **Edit** option in the menu for the corresponding configuration on the right side.
-
-![edit config](images/css_edit_configurations.png)
-
-This approach enables you to:
-- Use existing instances of {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, and other services
-- Deploy to an existing resource group
-- Configure endpoint type private/public
-- Reuse existing {{site.data.keyword.keymanagementserviceshort}} keys
-- Tuning the parameters of individual services
-- ...
-
-### Removing configurations from the stack
-{: #deployment-guide-customizations-removing-config}
-
-It is not recommended to remove and component, however you can remove any configuration from the stack, provided there is no direct dependency in later configurations, by selecting the **Remove from Stack** option in the right side menu for the corresponding configuration.
-
-This applies to the following configurations:
-- Observability
-- {{site.data.keyword.compliance_short}}
-- {{site.data.keyword.secrets-manager_short}}
-
-![edit config](images/ccs_remove_component.png)
-
-### Managing stack-Level inputs and outputs
-{: #deployment-guide-customizations-managing-inputs-outputs}
-
-You can add or remove inputs and outputs surfaced at the stack level by following these steps:
-1. Select the member configuration
-
-    ![stack definition](images/ccs_define_stack.png)
-1. You are presented with a screen allowing you to promote any of the configuration inputs or outputs at the stack level
-
-    ![stack definition](images/ccs_edit_stack_definition_config.png)
-
-### Sharing modified stacks through a private {{site.data.keyword.cloud_notm}} catalog
-{: #deployment-guide-customizations-sharing-stacks}
-
-After you make modifications to your stack in the project, you can share it with others through a private {{site.data.keyword.cloud_notm}} catalog. To do so, follow these steps:
-1. Deploy the stack at least once: You need to deploy the stack first to allow importing the stack definition to a private catalog.
-1. Select the **Add to private catalog** option in the menu on the member configuration.
-
-This will allow you to share your modified stack with others through a private {{site.data.keyword.cloud_notm}} catalog.
-
-## Undeploying the Stack, and all associated infrastructure resources
-{: #deployment-guide-undeploy}
-
-### Undeploying infrastructure
-{: #deployment-guide-undeploy-infrastructure}
-
-The deployable architecture can be deployed only with an API key associated with a user. It is not compatible with API keys associated with a service ID. Additionally, it cannot be deployed using the project trusted profile support.
-{: tip}
-
-You might see notifications in {{site.data.keyword.cloud_notm}} Project indicating that one or more configurations in the stack have new versions available. You can safely ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components will also be updated.
-{: note}
-
-To undeploy the infrastructure created by the automation, complete the following steps:
-
-#### 1. Undeploy configurations in the project
-{: #deployment-guide-undeploy-configs}
-
-Undeploy each member configuration in the project, one by one, through the UI, starting from the `4b - Secrets Manager` and working your way up in the stack up to, and inclusive of `1 - Key management`. Wait for full undeployment of a configuration before starting to undeploy the next configuration up in the stack.
-
-#### 3. Delete reclamation claims
-{: #deployment-guide-undeploy-reclamation}
-
-Before undeploying the `1 - Key management`, you need to delete the reclamation claims for the resources deleted from the previous steps. Reclamation allows you to restore deleted resources for up to one week. However, any reclamation that is still active prevents from deleting the resource group managed by the `1 - Key management`:
-
-- Log in to the target {{site.data.keyword.cloud_notm}} account with the CLI
-- Run `ibmcloud resource reclamations` to view the full list of reclamation. You can identify the exact reclamations to delete as they are planned to be deleted in one week after the date for which the resource was deleted.
-- For each reclamation, execute `ibmcloud resource reclamation-delete <reclamation-id>`. The reclamation-id is the ID provided in the results from ibmcloud resource reclamations listing.
-- Run `ibmcloud resource reclamations` again to ensure the reclamations have been fully deleted
-
-More details are available [here](/docs/account?topic=account-resource-reclamation&interface=cli).
-
-#### 4. Undeploy `1 - Key management`
-{: #deployment-guide-undeploy-kms}
-
-You can now undeploy `1 - Key management` in the project.
-
-#### 5. Delete project
-{: #deployment-guide-undeploy-project}
-
-After all member configurations are undeployed, you can delete the project. You can also delete the project first to delete all member configurations if you do not want to delete stacks one by one.
+    Select the **Add to private catalog** option in the menu on the member configuration.

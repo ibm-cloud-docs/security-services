@@ -35,6 +35,7 @@ toc:
   - navgroup:
       id: howto
       topics:
+      - customize.md
       - undeploy.md
   - navgroup:
       id: reference

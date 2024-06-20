@@ -41,4 +41,6 @@ This deployable architecture supports these features.
 * Creates and configures an {{site.data.keyword.cos_full_notm}} instance and multiple {{site.data.keyword.cos_short}} bucket that is encrypted by {{site.data.keyword.keymanagementserviceshort}}.
 * Creates and configures service-to-service authorizations for the following services: KMS, {{site.data.keyword.en_short}}, {{site.data.keyword.cos_short}}, {{site.data.keyword.secrets-manager_short}}, and Security and Compliance Center.
 * Creates and configures IBM Observability components {{site.data.keyword.atracker_short}}, {{site.data.keyword.monitoringlong_notm}}, and {{site.data.keyword.loganalysislong_notm}}.
-* Ensures compliance with the controls in the CIS IBM Cloud Foundations Benchmark profile. That profile validates whether your resource configurations meet the baseline requirements that are identified by the Center for Internet Security. For more information, see the [profile change log](/docs/security-compliance?topic=security-compliance-predefined-profiles)
+* Ensures compliance with some of the controls in the CIS IBM Cloud Foundations Benchmark profile. To view the list of added controls, follow these steps:
+    1.  Go the {{site.data.keyword.cloud_notm}} [catalog](/catalog#reference_architecture){: external} and search for the Core Security Services deployable architecture.
+    1.  Click the tile for the deployable architecture to open the details. The Security & compliance tab lists all of the controls that are included in the deployable architecture.

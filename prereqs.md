@@ -38,12 +38,13 @@ Complete the following steps before you deploy the core security services deploy
 1.  Set up account access ({{site.data.keyword.iamshort}} (IAM)):
 
     1.  Create an {{site.data.keyword.cloud_notm}} [API key](/docs/account?topic=account-userapikey&interface=terraform#create_user_key-api-terra) in the target account with sufficient permissions. This API key authorizes the project to deploy to a target account and is required to deploy your architecture. For more information, see [Using an API key with Secrets Manager to authorize a project to deploy an architecture](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
+    1.  Store the value of the API key because you need it later.
 
-    - On evaluation environments, grant the Administrator role on the **IAM Identity Service**, **All Identity and Access enabled services**, and on the **Activity Tracker Event Routing** and **All Account Management** services.
-    - For a production environment, restrict access to the minimum permissions level as indicated in the **Permissions** tab of the deployable architecture details page.
-    - Store the value of the API key because you need it later.
+- On evaluation environments, grant the Administrator role on the **IAM Identity Service**, **All Identity and Access enabled services**, and on the **Activity Tracker Event Routing** and **All Account Management** services.
+- For a production environment, restrict access to the minimum permissions level as indicated in the **Permissions** tab of the deployable architecture details page.
 
 ## Optional planning information
+{: #css-optional-plan}
 
 The following items are not required for core security services deployable architecture, but might support your deployment.
 

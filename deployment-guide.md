@@ -69,8 +69,6 @@ Create your configuration by setting variables.
 
     If the first member configuration of the stack (`1 - Key management`) is not marked as **Ready to validate**, refresh the page in your browser.
 1.  Click **Validate** in **Draft status** in the `1 - Key management` row.
-
-    ![validate button](images/ccs_validate.png)
 1.  Approve the configuration and click **Deploy** after validation successfully completes.
 1.  After you deploy the initial member configuration, you can validate and deploy the remaining member configuration at the same time. Repeat these deployment steps for each member configuration in the architecture.
 

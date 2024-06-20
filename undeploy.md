@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-06-20"
 
 keywords: security services, deployable architecture, IaC
 
@@ -22,7 +22,7 @@ The deployable architecture can be deployed only with an API key associated with
 
 To undeploy the infrastructure created by the deployable architecture, complete the following steps:
 
-You can also delete the project first to delete all member configurations if you do not want to delete stacks one by one.
+You can also delete the project first to delete all member configurations if you do not want to delete member configurations one by one.
 {: tip}
 
 1.  [Install or update](/docs/cli?topic=cli-getting-started) the {{site.data.keyword.cloud_notm}} CLI.

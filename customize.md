@@ -18,7 +18,7 @@ subcollection: security-services
 The core security services deployable architecture supports several customization options. These are some common options.
 {: shortdesc}
 
-### Editing member configurations
+## Editing member configurations
 {: #customize-edit-config}
 
 Each member configuration in the deployable architecture stacks includes a large number of input parameters. You can edit the configuration to change the default values.

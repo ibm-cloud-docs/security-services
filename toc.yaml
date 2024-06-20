@@ -32,10 +32,10 @@ toc:
       id: deploy
       topics:
       - deployment-guide.md
+      - customize.md
   - navgroup:
       id: howto
       topics:
-      - customize.md
       - undeploy.md
   - navgroup:
       id: reference

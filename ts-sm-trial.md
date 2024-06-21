@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-06-21"
 
 keywords:
 
@@ -28,7 +28,7 @@ An error displays in the {{site.data.keyword.secrets-manager_short}} deployment 
 
 And if a Trial plan instance of {{site.data.keyword.secrets-manager_short}} is undeployed and then redeployed with the Trial plan in the same account, the deployment of the {{site.data.keyword.secrets-manager_short}} member fails.
 
-To minimize costs, the deployable architecture deploys a Trial plan instance of {{site.data.keyword.secrets-manager_short}} by default. However, you can create only one Trial instance of {{site.data.keyword.secrets-manager_short}} in an account.
+You can create only one Trial instance of {{site.data.keyword.secrets-manager_short}} in an account.
 {: tsCauses}
 
 You can deploy a Standard plan instance from the **Optional settings** of the deployable architecture.

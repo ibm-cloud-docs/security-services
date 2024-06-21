@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-06-21"
 
 keywords: security services, deployable architecture, IaC, help, support
 
@@ -15,7 +15,7 @@ subcollection: security-services
 # Getting help and support for the core security services deployable architectures
 {: #help-support}
 
-If you experience an issue or have questions when you deploy a core security services deployable architecture, you can use the following resources before you open a support case.
+If you experience an issue or have questions when you deploy your core security services deployable architecture, you can use the following resources before you open a support case.
 {: shortdesc}
 
 
@@ -26,31 +26,38 @@ If you experience an issue or have questions when you deploy a core security ser
 
 
 
-If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). If you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
 
 ## Providing support case details
 {: #support-case-details}
 
 To ensure that the support team can start investigating your case to provide a timely resolution, you must include details from two logs from your failed deployment.
 
+1.  In your project, go to the needs attention widget on the **Overview** tab and click the message to view more information about the issue.
+1.  Provide the member configuration name, source URL, and source release, and folder from the {{site.data.keyword.bpshort}} log:
+    1.  In the log file, find the architecture information. In the following example, you see the `Related Workspace`, `sourcerelease`, and `sourceurl`:
 
-1. From your Schematics log, provide the architecture name, source URL, and version.
-   a. In the {{site.data.keyword.cloud_notm}} console, go to **Schematics** > **Workspaces** > **deployable architecture instance**.
-   b. Copy and paste into the case details the portion of the log that provides the architecture information. The following is an example of what should be copied:
+        ```sh
+        2023/04/06 18:11:43 Related Workspace: name=2 - Observability, sourcerelease=(1.0.0), sourceurl=, folder=folder=terraform-ibm-kms-all-inclusive-4.8.5/solutions/standard
+        ```
+        {: screen}
 
-      ```sh
-      2023/04/06 18:11:43 Related Workspace: name=deploy-arch-ibm-slz-ocp-04-06-2023, sourcerelease=(not specified), sourceurl=https modules/terraform-ibm-landing-zone/archive/v3.1.2.tar.gz,tolder=terratorm-ibm-landing-zone-3.1.2/patterns/roks
-       ```
+    1.  Copy the architecture information and paste it into the case details.
 
-2. Provide the Terraform Log Analyzer summary from your project.
-   a. In the {{site.data.keyword.cloud_notm}} console, go to **your project** > **Configurations** > **deployable architecture instance**.
-   b. Depending on where you are in your deployment process go to **Viewing validation results** or **Viewing last deployment**. Take a screenshot of the results and add it to your support case.
-
-## Routing your support case expeditiously
+## Routing your support case
 {: #support-case-routing}
 
-To get your support case routed correctly to speed up resolution, make sure that you select the right product when you open the case.
+To route your support case correctly to speed up resolution, select the applicable product when you open the case.
 
-If you're having issues getting the deployable architecture deployed, use the name of the deployable architecture as it is listed in the catalog.
+### Routing when you can't deploy successfully
+{: #support-routing-no-deploy}
 
-However, if you successfully deployed and are instead having an issue with a service in the deployable architecture, set that service as the product name in the case.
+If you can't deploy your deployable architecture, open a support case with the most likely cause of the issue:
+
+- If you identified the member configuration that you think is causing the error from the {{site.data.keyword.bpshort}} log, use the name of that configuration as the product name in the case.
+- If you can't identify the error from the {{site.data.keyword.bpshort}} log, use the name of the deployable architecture as it is listed in the IBM Cloud catalog.
+
+### Routing when you deployed successfully
+{: #support-routing-deploy}
+
+If you successfully deployed, yet have an issue with a service in the deployable architecture, open a support case and use the name of that service.

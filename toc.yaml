@@ -31,7 +31,7 @@ toc:
   - navgroup:
       id: deploy
       topics:
-      - deployment-guide.md
+      - deploy.md
       - customize.md
   - navgroup:
       id: howto
@@ -54,3 +54,10 @@ toc:
           topics:
           - ts-sm-trial.md
           - ts-platform-metrics.md
+          - topicgroup:
+              label: Troubleshooting projects
+              topics:
+              - include: ../secure-enterprise/ts-needs-attention.md
+                navtitle: How do I address a failed validation?
+              - include: ../secure-enterprise/ts-deploy.md
+                navtitle: How do I address a failed deployment?

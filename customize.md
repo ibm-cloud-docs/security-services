@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-20"
+lastupdated: "2024-06-21"
 
 keywords: security services, deployable architecture, IaC
 
@@ -25,8 +25,6 @@ Each member configuration in the deployable architecture stacks includes a large
 
 For example, by editing the member configuration, you can accomplish these things:
 
-- Use an existing instance of {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, or other service.
-- Deploy to an existing resource group.
 - Configure the endpoint type as private or public.
 - Reuse existing {{site.data.keyword.keymanagementserviceshort}} keys.
 - Tune the parameters of individual services.
@@ -40,7 +38,6 @@ You can remove a member configuration from the stack that other configurations d
 
 In the core security services deployable architecture, you can remove the following configurations:
 
-- Observability
 - {{site.data.keyword.compliance_short}}
 - {{site.data.keyword.secrets-manager_short}}
 

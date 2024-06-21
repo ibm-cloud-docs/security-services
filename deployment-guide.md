@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-20"
+lastupdated: "2024-06-21"
 
 keywords: security services, deployable architecture, IaC
 
@@ -68,8 +68,8 @@ Create your configuration by setting variables.
 
 1.  In your project, click the **Configurations** tab.
 
-    If the first member configuration of the stack (`1 - Key management`) is not marked as **Ready to validate**, refresh the page in your browser.
-1.  Click **Validate** in **Draft status** in the `1 - Key management` row.
+    If the first member configuration of the stack (`1a - Key management`) is not marked as **Ready to validate**, refresh the page in your browser.
+1.  Click **Validate** in **Draft status** in the `1a - Key management` row.
 1.  Approve the configuration and click **Deploy** after validation successfully completes.
 1.  After you deploy the initial member configuration, you can validate and deploy the remaining member configuration at the same time. Repeat these deployment steps for each member configuration in the architecture.
 
@@ -81,11 +81,4 @@ The core security services deployable architecture is now deployed in the target
 View the resources created by the deployable architecture.
 
 1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** in the target account.
-1.  Choose the resource group and region where the infrastructure was deployed. The resource group name is based on the `prefix` and `resource_group_name` inputs of the deployable architecture configuration.
-
-## Next steps
-{: #next-steps}
-
-- Share your deployable architecture with users in your account or other accounts by using a [private catalog](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-share&interface=ui). Sharing to a private catalog makes your deployable architecture available in a private {{site.data.keyword.cloud_notm}} catalog.
-
-    Select the **Add to private catalog** option in the menu on the member configuration.
+1.  Choose the resource group and region where the infrastructure was deployed.

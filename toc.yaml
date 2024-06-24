@@ -1,0 +1,63 @@
+toc:
+  properties:
+    subcollection: security-services
+    industry: security
+    use-case: deployment of security services
+    compliance: security
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    deployable: true
+    href: /docs/security-services
+    path: security-services
+    description: deployable architecture for Core security services, including Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, IBM Cloud Object Storage, and Observability.
+    label: Core security services
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - topic: overview.md
+        navtitle: Overview
+      - topic: release-notes.md
+        navtitle: Release notes
+  - navgroup:
+      id: architecture
+      topics:
+      - include: ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
+  - navgroup:
+      id: plan
+      topics:
+      - prereqs.md
+  - navgroup:
+      id: deploy
+      topics:
+      - deploy.md
+      - customize.md
+  - navgroup:
+      id: howto
+      topics:
+      - undeploy.md
+  - navgroup:
+      id: reference
+      topics:
+      - topic: responsibilities.md
+        navtitle: Responsibilities
+  - navgroup:
+      id: help
+      topics:
+      - topic: support.md
+        navtitle: Getting help and support
+      - topic: known-issues.md
+        navtitle: Known issues
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - ts-sm-trial.md
+          - ts-platform-metrics.md
+          - topicgroup:
+              label: Troubleshooting projects
+              topics:
+              - include: ../secure-enterprise/ts-needs-attention.md
+                navtitle: How do I address a failed validation?
+              - include: ../secure-enterprise/ts-deploy.md
+                navtitle: How do I address a failed deployment?

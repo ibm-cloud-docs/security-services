@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-21"
+lastupdated: "2024-06-24"
 
 keywords: security services, deployable architecture, IaC
 
@@ -65,6 +65,8 @@ Create your configuration by setting variables.
 
 ## Step 3. Validate and deploy the architecture
 {: #deploy-validate}
+
+
 
 1.  In your project, click the **Configurations** tab.
 

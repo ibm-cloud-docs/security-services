@@ -32,7 +32,7 @@ Make sure that you comply with the prerequisites in the [planning](/docs/securit
 1.  Click the tile for the deployable architecture to open the details.
 1.  Select the latest product version in the Architecture section.
 1.  Click **Review deployment options**.
-1.  Select the **Add to project** deployment type in Deployment options, and then click **Add to project**.
+1.  Select the **Add to project** deployment type in **Deployment options**, and then click **Add to project**.
 
     For more information about the enterprise account structures, see the [Central administration account](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-admin-hub-account) white paper.
 

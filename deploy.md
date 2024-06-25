@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-24"
+lastupdated: "2024-06-25"
 
 keywords: security services, deployable architecture, IaC
 
@@ -66,7 +66,24 @@ Create your configuration by setting variables.
 ## Step 3. Validate and deploy the architecture
 {: #deploy-validate}
 
+You can deploy a stacked deployable architecture in two ways:
 
+- By using **Auto-deploy**: The deployment method can be useful for demonstration and nonproduction environments. With auto-deploy, all the stack member configurations are validated and then approved and deployed.
+
+    You can check the **Auto-deploy** setting for your project by clicking **Manage** > **Settings**. By turning Auto-deploy on, you enable the setting for all configurations in the project.
+    {: tip}
+
+- Individually by deploying each member configuration. The manual method is appropriate for projects that hold production environments. You can review the changes in each member configuration before the automation is run.
+
+### Deploying the architecture with Auto-deploy
+{: #deploy-auto}
+
+1.  Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") next to **View stack configurations** and click **Validate**.
+
+    If the **Auto-deploy** setting is off in your project, only member configurations that are ready are validated.
+
+### Deploying each member configuration
+{: #deploy-manual}
 
 1.  In your project, click the **Configurations** tab.
 

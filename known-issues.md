@@ -44,7 +44,7 @@ To fix the error, follow these steps in [Updating to version 1.1.1](#ki-update-p
 ## Updating to version 1.1.1
 {: #ki-update-profile}
 
-An issue with projects, the value for the **profile_attachments** in the `4a - Security and Compliance Center` member configuration is not updated when you update to version 1.1.1 of the Core Security Services deployable architecture.
+Because of an issue with projects, the value for the **profile_attachments** input in the `4a - Security and Compliance Center` member configuration is not updated when you update to version 1.1.1 of the Core Security Services deployable architecture.
 
 Follow these steps to update the profile attachment:
 
@@ -55,8 +55,8 @@ Follow these steps to update the profile attachment:
 1.  Select the new version in the **Define details** section and click **Save**.
 1.  In the row for the member configuration named `4a - Security and Compliance Center`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
 1.  Click the **Optional** tab in the **Configure** section.
-1.  Find the **profile_attachments** input variable and click the ![Edit icon](../icons/edit-tagging.svg "Edit")
-1. Replace the array with the following value
+1.  Find the **profile_attachments** input variable and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
+1.  Replace the profile name in the array with the following value:
 
     ```json
     [

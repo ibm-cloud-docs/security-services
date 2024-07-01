@@ -63,7 +63,10 @@ Follow these steps to update the profile attachment:
 1.  In the row for the deployable architecture configuration, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") for the stack and select **Edit**.
 1.  Select the new version in the **Define details** section and click **Save**.
 1.  In the row for the member configuration named `4a - Security and Compliance Center`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
-    :information_source: You may see an error in the UI under some inputs that says `Internal Server Error: Cannot resolve reference`. This can be ignored. For more information, see [Internal Server Error: Cannot resolve reference](#ki-err-refs)
+
+    You might see some inputs display the error message "Internal Server Error: Cannot resolve reference", which you can ignore. For more information, see [Internal server error: Cannot resolve reference](#ki-err-refs).
+    {: tip}
+
 1.  Click the **Optional** tab in the **Configure** section.
 1.  Find the **profile_attachments** input variable and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 1.  Replace the profile name in the array with the following value:

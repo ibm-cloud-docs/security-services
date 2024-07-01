@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-21"
+lastupdated: "2024-07-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -29,7 +29,7 @@ For example, by editing the member configuration, you can accomplish these thing
 - Reuse existing {{site.data.keyword.keymanagementserviceshort}} keys.
 - Tune the parameters of individual services.
 
-To edit the member configuration, select **Edit** from the Actions icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the member configuration row.
+To edit the member configuration, select **Edit** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options") in the member configuration row.
 
 ## Removing configurations
 {: #customize-remove-config}
@@ -41,7 +41,7 @@ In the core security services deployable architecture, you can remove the follow
 - {{site.data.keyword.compliance_short}}
 - {{site.data.keyword.secrets-manager_short}}
 
-To remove a member configuration, select **Remove from Stack** from the Actions icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the member configuration row.
+To remove a member configuration, select **Remove from Stack** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options") in the member configuration row.
 
 ## Managing inputs and outputs
 {: #customize-manage-vars}

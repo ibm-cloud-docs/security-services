@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-25"
+lastupdated: "2024-07-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -78,7 +78,7 @@ You can deploy a stacked deployable architecture in two ways:
 ### Deploying the architecture with Auto-deploy
 {: #deploy-auto}
 
-1.  Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") next to **View stack configurations** and click **Validate**.
+1.  Click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") next to **View stack configurations** and click **Validate**.
 
     If the **Auto-deploy** setting is off in your project, only member configurations that are ready are validated.
 

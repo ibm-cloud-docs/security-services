@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-01"
+lastupdated: "2024-07-08"
 
 keywords: security services, deployable architecture, IaC
 
@@ -17,15 +17,6 @@ subcollection: security-services
 
 Because issues change frequently, check this list regularly.
 {: shortdesc}
-
-## Internal server error: Cannot resolve reference
-{: #ki-err-refs}
-
-When you edit a member configuration of the deployable architecture stack, you might see that some of the inputs display a message with the following text:
-
- > Internal Server Error: Cannot resolve reference
-
-You can ignore this message because it doesn't prevent you from deploying the stack.
 
 ## Validation of 4a - Security and Compliance Center fails in version 1.0.0
 {: #ki-scc-fail}
@@ -63,10 +54,6 @@ Follow these steps to update the profile attachment:
 1.  In the row for the deployable architecture configuration, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") for the stack and select **Edit**.
 1.  Select the new version in the **Define details** section and click **Save**.
 1.  In the row for the member configuration named `4a - Security and Compliance Center`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
-
-    You might see some inputs display the error message "Internal Server Error: Cannot resolve reference", which you can ignore. For more information, see [Internal server error: Cannot resolve reference](#ki-err-refs).
-    {: tip}
-
 1.  Click the **Optional** tab in the **Configure** section.
 1.  Find the **profile_attachments** input variable and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 1.  Replace the profile name in the array with the following value:

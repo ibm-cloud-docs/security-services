@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-20"
+lastupdated: "2024-07-09"
 
 keywords:
 
@@ -12,12 +12,12 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding your responsibilities when you use the core security services deployable architectures
+# Understanding your responsibilities when you use the {{site.data.keyword.name-da}} deployable architectures
 {: #shared-resp}
 
 
 
-Learn about the management responsibilities and terms and conditions that you have when you use one of the core security services deployable architectures.
+Learn about the management responsibilities and terms and conditions that you have when you use one of the {{site.data.keyword.name-da}} deployable architectures.
 {: shortdesc}
 
 - For more information about the responsibilities for you and for {{site.data.keyword.IBM}} when you use a deployable architecture, see [Understanding your responsibilities when you use deployable architectures](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures).
@@ -26,7 +26,7 @@ Learn about the management responsibilities and terms and conditions that you ha
 
 
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a core security services deployable architecture.
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a {{site.data.keyword.name-da}} deployable architecture.
 
 
 
@@ -40,7 +40,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-The core security services deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
+The {{site.data.keyword.name-da}} deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
 
 
 ## Change management
@@ -53,7 +53,7 @@ The core security services deployable architecture does not identify specific re
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-The core security services deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
+The {{site.data.keyword.name-da}} deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
 
 
 ## Identity and access management

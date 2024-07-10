@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-20"
+lastupdated: "2024-07-09"
 
 keywords:
 
@@ -12,15 +12,15 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for the core security services deployable architectures
+# Planning for the {{site.data.keyword.name-da}} deployable architectures
 {: #prereqs}
 
-Before you begin the deployment of a core security services deployable architecture, make sure that you understand and meet the prerequisites.
+Before you begin the deployment of a {{site.data.keyword.name-da}} deployable architecture, make sure that you understand and meet the prerequisites.
 
 ## Confirm your {{site.data.keyword.cloud_notm}} settings
 {: #css-cloud-prereqs}
 
-Complete the following steps before you deploy the core security services deployable architecture.
+Complete the following steps before you deploy the {{site.data.keyword.name-da}} deployable architecture.
 
 1.  Confirm or set up an {{site.data.keyword.cloud_notm}} account:
 
@@ -46,7 +46,7 @@ Complete the following steps before you deploy the core security services deploy
 ## Optional planning information
 {: #css-optional-plan}
 
-The following items are not required for core security services deployable architecture, but might support your deployment.
+The following items are not required for {{site.data.keyword.name-da}} deployable architecture, but might support your deployment.
 
 - Install the {{site.data.keyword.cloud_notm}} CLI Project plug-in by running the `ibmcloud plugin install project` command. For more information, see the [Project CLI reference](/docs/cli?topic=cli-projects-cli).
 - Familiarize yourself with the [Customization options](/docs/security-services?topic=security-services-customize-css).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-01"
+lastupdated: "2024-07-09"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,23 +12,22 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deploying the Core Security Services deployable architecture
+# Deploying the {{site.data.keyword.name-da}} deployable architecture
 {: #deploy-css}
 
 You can deploy a deployable architecture from the {{site.data.keyword.cloud_notm}} catalog.
 {: shortdesc}
 
-To deploy the core security services architecture through the {{site.data.keyword.cloud_notm}} catalog, follow these steps.
+To deploy the {{site.data.keyword.name-da}} architecture through the {{site.data.keyword.cloud_notm}} catalog, follow these steps. If you want to update to a new version, see [Updating to a new deployable architecture version](/docs/security-services?topic=security-services-update-css).
+
 
 Make sure that you comply with the prerequisites in the [planning](/docs/security-services?topic=security-services-prereqs) topic.
 {: important}
 
-
-
 ## Step 1. Add the architecture to a project
 {: #deploy-details-deploy}
 
-1.  Go to the {{site.data.keyword.cloud_notm}} [catalog](/catalog#reference_architecture){: external} and search for the Core Security Services deployable architecture.
+1.  Go to the {{site.data.keyword.cloud_notm}} [catalog](/catalog#reference_architecture){: external} and search for the {{site.data.keyword.name-da}} deployable architecture.
 1.  Click the tile for the deployable architecture to open the details.
 1.  Select the latest product version in the Architecture section.
 1.  Click **Review deployment options**.
@@ -44,11 +43,9 @@ Make sure that you comply with the prerequisites in the [planning](/docs/securit
 
 Create your configuration by setting variables.
 
-
 1.  From the **Security** panel, select the authentication method that you want to use to deploy your architecture.
 
     Add the API key that you identified in the [planning](/docs/security-services?topic=security-services-prereqs) topic.
-
 
 1.  In the **Security** > **Authentication** tab in the **Configure** section, select the API key
 
@@ -70,7 +67,7 @@ You can deploy a stacked deployable architecture in two ways:
 
 - By using **Auto-deploy**: The deployment method can be useful for demonstration and nonproduction environments. With auto-deploy, all the stack member configurations are validated and then approved and deployed.
 
-    You can check the **Auto-deploy** setting for your project by clicking **Manage** > **Settings**. By turning Auto-deploy on, you enable the setting for all configurations in the project.
+    You can check the **Auto-deploy** setting for your project by clicking **Manage** > **Settings**. By turning on Auto-deploy, you enable the setting for all configurations in the project.
     {: tip}
 
 - Individually by deploying each member configuration. The manual method is appropriate for projects that hold production environments. You can review the changes in each member configuration before the automation is run.
@@ -92,7 +89,7 @@ You can deploy a stacked deployable architecture in two ways:
 1.  Approve the configuration and click **Deploy** after validation successfully completes.
 1.  After you deploy the initial member configuration, you can validate and deploy the remaining member configuration at the same time. Repeat these deployment steps for each member configuration in the architecture.
 
-The core security services deployable architecture is now deployed in the target account.
+The {{site.data.keyword.name-da}} deployable architecture is now deployed in the target account.
 
 ## Viewing resources created by the deployable architecture
 {: #deploy-view-resources}

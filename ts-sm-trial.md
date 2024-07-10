@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-21"
+lastupdated: "2024-07-09"
 
 keywords:
 
@@ -14,14 +14,14 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why does my {{site.data.keyword.secrets-manager_full_notm}} deployment fail with core security services?
+# Why does my {{site.data.keyword.secrets-manager_full_notm}} deployment fail with {{site.data.keyword.name-da}}?
 {: #ts-secrets-mgr-trial}
 {: troubleshoot}
 
 Your deployment of {{site.data.keyword.secrets-manager_short}} failed.
 {: shortdesc}
 
-You attempted to deploy the {{site.data.keyword.secrets-manager_short}} member of the core security services deployable architecture, but it failed.
+You attempted to deploy the {{site.data.keyword.secrets-manager_short}} member of the {{site.data.keyword.name-da}} deployable architecture, but it failed.
 {: tsSymptoms}
 
 An error displays in the {{site.data.keyword.secrets-manager_short}} deployment step if a Trial instance is already deployed in the same account.

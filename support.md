@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-06-21"
+lastupdated: "2024-07-09"
 
 keywords: security services, deployable architecture, IaC, help, support
 
@@ -12,10 +12,10 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting help and support for the core security services deployable architectures
+# Getting help and support for the {{site.data.keyword.name-da}} deployable architectures
 {: #help-support}
 
-If you experience an issue or have questions when you deploy your core security services deployable architecture, you can use the following resources before you open a support case.
+If you experience an issue or have questions when you deploy your {{site.data.keyword.name-da}} deployable architecture, you can use the following resources before you open a support case.
 {: shortdesc}
 
 

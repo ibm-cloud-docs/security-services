@@ -33,6 +33,8 @@ toc:
       topics:
       - deploy.md
       - customize.md
+      - topic: update.md
+        navtitle: Updating to a new version
   - navgroup:
       id: howto
       topics:

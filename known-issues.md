@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-08"
+lastupdated: "2024-07-09"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,7 +12,7 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Known issues with core security services deployable architectures
+# Known issues with {{site.data.keyword.name-da}} deployable architectures
 {: #known-issues}
 
 Because issues change frequently, check this list regularly.
@@ -44,7 +44,7 @@ To fix the error, follow these steps in [Updating to version 1.1.1](#ki-update-p
 ## Updating to version 1.1.1
 {: #ki-update-profile}
 
-Because of an issue with projects, the value for the **profile_attachments** input in the `4a - Security and Compliance Center` member configuration is not updated when you update to version 1.1.1 of the Core Security Services deployable architecture.
+Because of an issue with projects, the value for the **profile_attachments** input in the `4a - Security and Compliance Center` member configuration is not updated when you update to version 1.1.1 of the {{site.data.keyword.name-da}} deployable architecture.
 
 Follow these steps to update the profile attachment:
 
@@ -71,7 +71,7 @@ Follow these steps to update the profile attachment:
 ## Object Storage buckets deployed without activity tracking
 {: #ki-cos-no-at}
 
-Because of a limitation with the IBM Terraform provider, activity tracking is not enabled for {{site.data.keyword.cos_full_notm}} buckets that are created by the core security services deployable architecture. After the provider supports the feature, a new version of the deployable architecture will be released.
+Because of a limitation with the IBM Terraform provider, activity tracking is not enabled for {{site.data.keyword.cos_full_notm}} buckets that are created by the {{site.data.keyword.name-da}} deployable architecture. After the provider supports the feature, a new version of the deployable architecture will be released.
 
 ## Error when you try to undeploy key management
 {: #ki-kms-undeploy}

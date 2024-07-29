@@ -10,8 +10,8 @@ toc:
     deployable: true
     href: /docs/security-services
     path: security-services
-    description: deployable architecture for Core security services, including Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, IBM Cloud Object Storage, and Observability.
-    label: Core security services
+    description: Deployable architecture for IBM Cloud Essential Security and Observability Services. The deployable architecture includes Key Protect, Secrets Manager, Security Center and Compliance, Security Center and Compliance Workload Protection, Event Notifications, IBM Cloud Object Storage, and Observability.
+    label: IBM Cloud Essential Security and Observability Services
   entries:
   - navgroup:
       id: overview

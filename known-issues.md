@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-07-29"
 
 keywords: security services, deployable architecture, IaC
 
@@ -67,11 +67,6 @@ Follow these steps to update the profile attachment:
 
 1.  Click **Save**.
 1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to upgrade the deployable architecture stack to version.
-
-## Object Storage buckets deployed without activity tracking
-{: #ki-cos-no-at}
-
-Because of a limitation with the IBM Terraform provider, activity tracking is not enabled for {{site.data.keyword.cos_full_notm}} buckets that are created by the {{site.data.keyword.name-da}} deployable architecture. After the provider supports the feature, a new version of the deployable architecture will be released.
 
 ## Error when you try to undeploy key management
 {: #ki-kms-undeploy}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-29"
+lastupdated: "2024-08-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -19,6 +19,19 @@ Use these release notes to learn about the latest updates to the {{site.data.key
 {: shortdesc}
 
 
+
+## August 2024
+{: #css-2024-08}
+
+### 2 August 2024
+{: #css-aug-0124}
+{: release-note}
+
+Version 1.3.1 of the {{site.data.keyword.name-da}} deployable architecture is available
+:   The {{site.data.keyword.name-da}} deployable architecture version 1.3.1 [is released](/catalog#deployable_architecture){: external}.
+
+    - Updates the {{site.data.keyword.secrets-manager_short}} member deployable architecture to version 1.17.1, which supports the use of `existing_secrets_manager_crn`.
+    - Adds a new `secret_manager_iam_engine_enabled` input variable to configure credentials for the {{site.data.keyword.secrets-manager_short}} IAM credentials engine. The default value is `false`.
 
 ## July 2024
 {: #css-2024-07}

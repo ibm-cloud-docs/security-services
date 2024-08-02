@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-07-29"
 
 keywords:
 
@@ -12,7 +12,7 @@ subcollection: security-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for the {{site.data.keyword.name-da}} deployable architectures
+# Planning for the {{site.data.keyword.name-da}} deployable architecture
 {: #prereqs}
 
 Before you begin the deployment of a {{site.data.keyword.name-da}} deployable architecture, make sure that you understand and meet the prerequisites.

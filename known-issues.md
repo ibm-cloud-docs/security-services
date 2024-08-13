@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-29"
+lastupdated: "2024-08-13"
 
 keywords: security services, deployable architecture, IaC
 
@@ -39,20 +39,11 @@ Because the CIS IBM Cloud Foundations Benchmark profile was renamed, validation 
  ```
 {: screen}
 
-To fix the error, follow these steps in [Updating to version 1.1.1](#ki-update-profile) to update to a later version. If you're not ready to update your deployable architecture, follow only the steps that update the **profile_attachments** input variable and validate the configuration.
-
-## Updating to version 1.1.1
-{: #ki-update-profile}
-
-Because of an issue with projects, the value for the **profile_attachments** input in the `4a - Security and Compliance Center` member configuration is not updated when you update to version 1.1.1 of the {{site.data.keyword.name-da}} deployable architecture.
-
-Follow these steps to update the profile attachment:
+To fix the error, update to version 1.1.1 or later. If you're not ready to update your deployable architecture, follow these steps to update the profile attachment manually:
 
 1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Projects**.
 1.  Click the project with the stacked deployable architecture that you want to update.
 1.  Click the **Configurations** tab.
-1.  In the row for the deployable architecture configuration, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") for the stack and select **Edit**.
-1.  Select the new version in the **Define details** section and click **Save**.
 1.  In the row for the member configuration named `4a - Security and Compliance Center`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
 1.  Click the **Optional** tab in the **Configure** section.
 1.  Find the **profile_attachments** input variable and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
@@ -66,7 +57,7 @@ Follow these steps to update the profile attachment:
     {: codeblock}
 
 1.  Click **Save**.
-1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to upgrade the deployable architecture stack to version.
+1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to validate and deploy the updated deployable architecture.
 
 ## Error when you try to undeploy key management
 {: #ki-kms-undeploy}

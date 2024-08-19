@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-19"
 
 keywords:
 
@@ -103,6 +103,12 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |------|-------------------------------------------------|-----------------------|
+| Recover {{site.data.keyword.keymanagementserviceshort}} components and workloads | Recover {{site.data.keyword.keymanagementserviceshort}} components. | Recover workloads that run {{site.data.keyword.keymanagementserviceshort}}. See [High availability and disaster recovery](/docs/key-protect?topic=key-protect-ha-dr). |
+| Ensure that {site.data.keyword.cos_full_notm} data is highly available | Adhere to {{site.data.keyword.IBM_notm}} responsibilities [as documented](docs/cloud-object-storage?topic=cloud-object-storage-responsibilities). | Adhere to your responsibilities [as documented](docs/cloud-object-storage?topic=cloud-object-storage-responsibilities). [Use replication for business continuity and disaster recovery](/docs/cloud-object-storage?topic=cloud-object-storage-replication-overview), if necessary. |
+| Recover {{site.data.keyword.compliance_short}} service and scheduled scan results | Support recovery point objective and recover time objective for the service. | |
+| Back up {{site.data.keyword.logs_full_notm}} components | See [Understanding your responsibilities when using {{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities#disaster-recovery). | See [Understanding your responsibilities when using {{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities#disaster-recovery). |
+| Recover {{site.data.keyword.en_full_notm}} components and workloads | Recovers {{site.data.keyword.en_full_notm}} components. | Recover the workloads that run {{site.data.keyword.en_full_notm}}, and recover your application and application data. See [Understanding your responsibilities with {{site.data.keyword.en_full_notm}}](/docs/event-notifications?topic=event-notifications-en-responsibilities#en-disaster-recovery)|
+| Ensure availability and recovery of {{site.data.keyword.sysdigsecure_full_notm}} components and data | Recover {{site.data.keyword.sysdigsecure_full_notm}} components in case of disaster. | See [Understanding your responsibilities when using {{site.data.keyword.sysdigsecure_full_notm}}]. |
 | Ensure availability and recovery of secrets | | Back up secrets. See [Understanding high availability and disaster recovery for Secrets Manager](/docs/secrets-manager?topic=secrets-manager-ha-dr). |
 {: row-headers}
 {: caption="Table 3. Responsibilities for disaster recovery" caption-side="bottom"}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-08-13"
+lastupdated: "2024-08-29"
 
 keywords: security services, deployable architecture, IaC
 
@@ -17,6 +17,22 @@ subcollection: security-services
 
 Because issues change frequently, check this list regularly.
 {: shortdesc}
+
+## Error when you try to deploy {{site.data.keyword.compliance_short}}
+{: #ki-scc-attachments}
+
+When you try to deploy the {{site.data.keyword.compliance_short}} member of the deployable architecture, you get the following error:
+
+> Error: CreateAttachmentWithContext failed. Necessary attachment parameters are not available to create or update attachment.
+
+The error is caused by an issue with the Terraform provider.
+
+To deploy successfully, edit the value of the `profile_attachments` optional input variable for the {{site.data.keyword.compliance_short}} member:
+
+1.  In your project, click the **Configurations** tab.
+1.  In the {{site.data.keyword.compliance_short}} member configuration row, select **Edit** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options").
+1.  Click the **Optional** tab in the **Configure** section.
+1.  Edit the `profile_attachments` input variable. Set the array to `[]` (an empty list).
 
 ## Validation of 4a - Security and Compliance Center fails in version 1.0.0
 {: #ki-scc-fail}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-29"
 
 keywords:
 
@@ -103,6 +103,6 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |------|-------------------------------------------------|-----------------------|
-| Ensure availability and recovery of secrets | | Back up secrets. See [Understanding high availability and disaster recovery for Secrets Manager](/docs/secrets-manager?topic=secrets-manager-ha-dr). |
+| Ensure availability and recovery of secrets | | Back up secrets. See [Understanding high availability and disaster recovery](/docs/secrets-manager?topic=secrets-manager-ha-dr) for {{site.data.keyword.secrets-manager_short}}. |
 {: row-headers}
 {: caption="Table 3. Responsibilities for disaster recovery" caption-side="bottom"}

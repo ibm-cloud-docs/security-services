@@ -31,7 +31,7 @@ Version 1.4.1 of the {{site.data.keyword.name-da}} deployable architecture is av
 :   The {{site.data.keyword.name-da}} deployable architecture version 1.4.1 [is released](/catalog#deployable_architecture){: external}.
 
     - When you upgrade, all deployable architecture members are updated to their latest versions.
-    - Adds the `existing_en_instance_crn` input variable adds support to specify an existing {{site.data.keyword.en_short}} instance.
+    - Adds the `existing_en_instance_crn` input variable to specify an existing {{site.data.keyword.en_short}} instance.
     - Fixes an issue deploying the `4a - Security and Compliance Center` member with the profile attachment.
 
         If you received the `CreateAttachmentWithContext failed` error in version 1.3.1 and you removed the attachment as a workaround, follow these steps to add back the profile attachment:

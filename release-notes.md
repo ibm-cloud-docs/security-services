@@ -43,11 +43,11 @@ Version 1.4.1 of the {{site.data.keyword.name-da}} deployable architecture is av
         1.  In the row for the member configuration named `4a - Security and Compliance Center`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
         1.  Click the **Optional** tab in the **Configure** section.
         1.  Find the **profile_attachments** input variable and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
-        1.  Replace the profile name in the array with the following value (an empty list):
+        1.  Replace the empty list in the array with the following profile name:
 
             ```json
             [
-              <name_of_profile_attachment>
+              "IBM Cloud Framework for Financial Services"
             ]
             ```
             {: codeblock}

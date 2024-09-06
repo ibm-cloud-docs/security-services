@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-08-29"
+lastupdated: "2024-09-06"
 
 keywords:
 
@@ -103,6 +103,12 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |------|-------------------------------------------------|-----------------------|
+| Recover {{site.data.keyword.keymanagementserviceshort}} components and workloads | Recover {{site.data.keyword.keymanagementserviceshort}} components. | Recover workloads that run {{site.data.keyword.keymanagementserviceshort}}. See [High availability and disaster recovery](/docs/key-protect?topic=key-protect-ha-dr) for {{site.data.keyword.keymanagementserviceshort}}. |
+| Ensure that {{site.data.keyword.cos_full_notm}} data is highly available | Adhere to {{site.data.keyword.IBM_notm}} responsibilities [as documented](docs/cloud-object-storage?topic=cloud-object-storage-responsibilities). | Adhere to your responsibilities [as documented](docs/cloud-object-storage?topic=cloud-object-storage-responsibilities). [Use replication](/docs/cloud-object-storage?topic=cloud-object-storage-replication-overview) for business continuity and disaster recovery, if necessary. |
+| Back up  {{site.data.keyword.at_full_notm}} components | See [your responsibilities](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities#disaster-recovery) when using {{site.data.keyword.at_full_notm}}. | See [your responsibilities](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities#disaster-recovery) when using {{site.data.keyword.at_full_notm}}. |
+| Recover {{site.data.keyword.en_full_notm}} components and workloads | Recover {{site.data.keyword.en_full_notm}} components. | Recover the workloads that run {{site.data.keyword.en_full_notm}}, and recover your application and application data. See [your responsibilities](/docs/event-notifications?topic=event-notifications-en-responsibilities#en-disaster-recovery) with {{site.data.keyword.en_full_notm}}. |
+| Recover {{site.data.keyword.compliance_short}} service and scheduled scan results | Support recovery point objective and recover time objective for the service. | See [Understanding business continuity and disaster recovery](/docs/security-compliance?topic=security-compliance-bc-dr) for {{site.data.keyword.compliance_short}}. |
+| Ensure availability and recovery of {{site.data.keyword.sysdigsecure_full_notm}} components and data | Recover {{site.data.keyword.sysdigsecure_full_notm}} components in case of disaster. | See [your responsibilities](/docs/workload-protection?topic=workload-protection-shared-responsibilities#disaster-recovery) when using {{site.data.keyword.sysdigsecure_full_notm}}. |
 | Ensure availability and recovery of secrets | | Back up secrets. See [Understanding high availability and disaster recovery](/docs/secrets-manager?topic=secrets-manager-ha-dr) for {{site.data.keyword.secrets-manager_short}}. |
 {: row-headers}
 {: caption="Table 3. Responsibilities for disaster recovery" caption-side="bottom"}

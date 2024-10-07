@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-10-07"
 
 keywords: security services, deployable architecture, IaC
 
@@ -47,7 +47,7 @@ Create your configuration by setting variables.
 
     Add the API key that you identified in the [planning](/docs/security-services?topic=security-services-prereqs) topic.
 
-1.  In the **Security** > **Authentication** tab in the **Configure** section, select the API key
+1.  In the **Security** > **Authentication** tab in the **Configure** section, select the API key.
 
 1.  Enter values for required fields from the **Required** tab.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-09-05"
+lastupdated: "2024-10-11"
 
 keywords: security services, deployable architecture, IaC
 
@@ -18,7 +18,43 @@ subcollection: security-services
 Use these release notes to learn about the latest updates to the {{site.data.keyword.name-da}} deployable architecture. The entries are grouped by date.
 {: shortdesc}
 
+## October 2024
+{: #security-services-date-for-update-2024-10}
 
+### 11 October 2024
+{: #security-services-date-for-update-oct-1124}
+{: release-note}
+
+Version 1.5.0 of the {{site.data.keyword.name-da}} deployable architecture is available
+:   The {{site.data.keyword.name-da}} deployable architecture version 1.5.0 [is released](/catalog#deployable_architecture){: external}.
+
+    - When you upgrade, all deployable architecture stack members are updated to their latest versions.
+    - The Observability deployable architecture will now deploy both IBM Cloud Logs and IBM Cloud Log Analysis. As IBM Cloud Log Analysis is now a deprecated service, which is replaced by IBM Cloud Logs, Log Analysis log archiving is now disabled which is required before the Log Analysis instance can be deleted.
+
+    In this version, the instance of IBM Cloud Logs will not have Event Notifications integration enabled, however this support will be coming in version 2.0.0. {: note}
+
+    - Since Log Analysis log archiving is now disabled, it means if you are upgrading from a previous version, the Object Storage bucket that was created by the Observability deployable architecture will be destroyed. If do not wan't to destroy this bucket and wan't to keep managing it through the Observability member deployable architecture, follow these steps:
+
+        1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Projects**.
+        1.  Click the project with the stacked deployable architecture that you want to update.
+        1.  Click the **Configurations** tab.
+        1.  Update the version to 1.5.0 but do not proceed to validate or deploy yet.
+        1.  In the row for the member configuration named `2 - Observability`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
+        1.  Click the **Optional** tab in the **Configure** section.
+        1.  Find the **manage_log_archive_cos_bucket** input variable and change the value to `true`.
+        1.  Click **Save**.
+        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to validate and deploy all deployable architectures in the stack.
+
+    - In version 2.0.0, Log Analysis will be full removed, however if you wan't to delete your Log Analysis instance before then, you can follow the below steps, but only after version 1.5.0 has been fully deployed:
+
+        1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Projects**.
+        1.  Click the project with the stacked deployable architecture that you want to update.
+        1.  Click the **Configurations** tab.
+        1.  In the row for the member configuration named `2 - Observability`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
+        1.  Click the **Optional** tab in the **Configure** section.
+        1.  Find the **log_analysis_provision** input variable and change the value to `false`.
+        1.  Click **Save**.
+        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to validate and deploy the deployable architecture.
 
 ## September 2024
 {: #css-2024-09}

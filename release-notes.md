@@ -33,7 +33,7 @@ Version 1.5.0 of the {{site.data.keyword.name-da}} deployable architecture is av
 
     In this version, the instance of IBM Cloud Logs will not have Event Notifications integration enabled, however this support will be coming in version 2.0.0. {: note}
 
-    - Since Log Analysis log archiving is now disabled, it means if you are upgrading from a previous version, the Object Storage bucket that was created by the Observability deployable architecture will be destroyed. If do not wan't to destroy this bucket and wan't to keep managing it through the Observability member deployable architecture, follow these steps:
+    - Since Log Analysis log archiving is now disabled, it means if you are upgrading from a previous version, the Object Storage bucket that was created by the Observability deployable architecture will be destroyed. If do not want to destroy this bucket and want to keep managing it through the Observability member deployable architecture, follow these steps:
 
         1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Projects**.
         1.  Click the project with the stacked deployable architecture that you want to update.

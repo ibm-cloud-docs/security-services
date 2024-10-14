@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "title": "IBM Cloud Essential Security and Observability Services",
+  "introduction": "Documentation for the IBM Cloud Essential Security and Observability Services deployable architecture that deploys core security and supporting services.",
+  "deployment_url": "https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmU%3D",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Overview of the deployable architecture",
+        "href": "/docs/security-services?topic=security-services-overview"
+      },
+      {
+        "title": "Planning for the deployable architecture",
+        "href": "/docs/security-services?topic=security-services-prereqs"
+      },
+      {
+        "title": "Deploying the deployable architecture",
+        "href": "/docs/security-services?topic=security-services-deploy-css"
+      },
+      {
+        "title": "Customization options",
+        "href": "/docs/security-services?topic=security-services-customize-css"
+      },
+      {
+        "title": "Understanding your responsibilities when you use the deployable architecture",
+        "href": "/docs/security-services?topic=security-services-shared-resp"
+      },
+      {
+        "title": "FAQs",
+        "href": "/docs/security-services?topic=security-services-faqs"
+      }
+    ]
+  },
+  "section_architectures": [
+    {
+      "title": "IBM Cloud Essential Security and Observability Services",
+      "href": "/docs/security-services?topic=security-services-core-security-services-pattern",
+      "deployable": true
+    }
+  ],
+  "section_updates": {
+    "view_more": "/docs/security-services?topic=security-services-css-relnotes"
+  }
+}
